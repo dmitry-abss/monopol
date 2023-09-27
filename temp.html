@@ -177,53 +177,41 @@
 	@style heading 1
 	*/
     h1 {
-      /*@tab Page
-@section heading 1
-@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-@style heading 1*/
+      /*@editable*/
       color: #27348b !important;
+      /*@editable*/
       font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
-      font-style: normal !important;
-      font-weight: 900 !important;
-      line-height: 125%;
+      /*@editable*/
       font-size: 55px;
-    }
-
-    h2 {
-      /*@editable*/
-      font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
-      /*@editable*/
-      font-size: 18px;
       /*@editable*/
       font-style: normal;
       /*@editable*/
-      font-weight: bold;
+      font-weight: 900 !important;
+      /*@editable*/
+      line-height: 100%;
+      /*@editable*/
+      letter-spacing: normal;
+      /*@editable*/
+      text-align: left;
+    }
+
+    h4 {
+      /*@editable*/
+      color: #000000 !important;
+      /*@editable*/
+      font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
+      /*@editable*/
+      font-size: 20px !important;
+      /*@editable*/
+      font-style: normal;
+      /*@editable*/
+      font-weight: 900 !important;
       /*@editable*/
       line-height: 125%;
       /*@editable*/
       letter-spacing: normal;
       /*@editable*/
       text-align: left;
-      color: #27348b !important;
-    }
-
-    h3 {
-      color: #27348b !important;
-
-    }
-
-    h4 {
-      /*@editable*/
-      color: #000000;
-      /*@editable*/
-      font-family: Helvetica;
-      /*@editable*/
-      font-size: 18px;
-      /*@editable*/
-      line-height: 125%;
-      /*@editable*/
-      text-align: left;
-      margin-top: -10px;
     }
 
     /*
@@ -262,18 +250,13 @@
 	@section preheader link
 	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 	*/
-    .bodyContainer .mcnTextContent a {
+    .preheaderContainer .mcnTextContent a {
       /*@editable*/
       color: #27348b;
       /*@editable*/
-      font-weight: 700;
+      font-weight: bold;
       /*@editable*/
-      text-decoration: underline !important;
-      /*@ediatble*/
-      /* background-color: #d6eae0; */
-      /*@editable*/
-      line-height: 125% !important;
-      font-family: 'museo-sans', Arial, Helvetica, sans-serif !important;
+      text-decoration: none;
     }
 
     /*
@@ -298,7 +281,7 @@
       /*@editable*/
       color: #000000;
       /*@editable*/
-      font-family: sabonnextltpro-regular, georgia, times, serif !important;
+      font-family: Helvetica;
       /*@editable*/
       font-size: 14px;
       /*@editable*/
@@ -314,7 +297,7 @@
 	*/
     .headerContainer .mcnTextContent a {
       /*@editable*/
-      color: #1c307e;
+      color: #27348b;
       /*@editable*/
       font-weight: bold;
       /*@editable*/
@@ -327,37 +310,30 @@
 	@tip Set the background color and borders for your email's body area.
 	*/
     #templateBody {
-      /*@tab Body
-@section body style
-@tip Set the background color and borders for your email's body area.*/
-      font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important;
-      font-weight: normal !important;
-      font-style: italic !important;
-      color: #27348b !important;
-      -ms-hyphens: auto;
-      -webkit-hyphens: auto;
-      hyphens: auto;
-      lang: de;
+      /*@editable*/
+      border-top: 0;
+      /*@editable*/
+      border-bottom: 0;
     }
 
     /*
 	@tab Body
 	@section body text
-	@style text
 	@tip Set the styling for your email's body text. Choose a size and color that is easy to read.
 	*/
     .bodyContainer .mcnTextContent,
     .bodyContainer .mcnTextContent p {
-      /*@tab Body
-@section body text
-@style text
-@tip Set the styling for your email's body text. Choose a size and color that is easy to read.*/
-      font-size: 18px;
+      /*@editable*/
       font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important;
+      /*@editable*/
       font-style: normal !important;
+      /*@editable*/
       font-weight: normal !important;
-      padding-top: 10px !important;
+      /*@editable*/
+      padding-bottom: 12px;
+      /*@editable*/
       line-height: 125%;
+      /*@editable*/
       color: #000000 !important;
     }
 
@@ -370,13 +346,9 @@
       /*@editable*/
       color: #27348b;
       /*@editable*/
-      font-weight: 700;
+      font-weight: bold;
       /*@editable*/
-      text-decoration: underline !important;
-      /*@ediatble*/
-      /* background-color: #d6eae0; */
-      /*@editable*/
-      line-height: 125% !important;
+      font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
     }
 
     /*
@@ -401,7 +373,7 @@
     .footerContainer .mcnTextContent,
     .footerContainer .mcnTextContent p {
       /*@editable*/
-      /* color: #000000; */
+      color: #000000;
       /*@editable*/
       font-family: Helvetica;
       /*@editable*/
@@ -419,46 +391,11 @@
 	*/
     .footerContainer .mcnTextContent a {
       /*@editable*/
-      /* color: #1c307e; */
+      color: #27348b;
       /*@editable*/
-      font-weight: 700;
+      font-weight: bold;
       /*@editable*/
       text-decoration: none;
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Italic';
-      font-style: italic;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Regular';
-      font-style: normal;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Bold';
-      font-style: normal;
-      font-weight: bold;
-      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'museo-sans-bold';
-      font-style: normal;
-      font-weight: 900;
-      src: url(https://agenda-austria.at/Newsletter/MuseoSans_900.otf) format('opentype');
-    }
-
-    @font-face {
-      font-family: 'museo-sans';
-      font-style: normal;
-      font-weight: 700;
-      src: url(https://agenda-austria.at/Newsletter/MuseoSans_900.otf) format('opentype');
     }
 
     @media only screen and (max-width: 480px) {
@@ -496,27 +433,6 @@
         max-width: 100% !important;
       }
 
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Italic';
-      font-style: italic;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Regular';
-      font-style: normal;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Bold';
-      font-style: normal;
-      font-weight: bold;
-      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
     }
 
     @media only screen and (max-width: 480px) {
@@ -667,6 +583,41 @@
 
     }
 
+    @font-face {
+      font-family: 'SabonNextLTPro-Italic';
+      font-style: italic;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Bold';
+      font-style: normal;
+      font-weight: bold;
+      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'museo-sans-bold';
+      font-style: normal;
+      font-weight: 900;
+      src: url(https://agenda-austria.at/Newsletter/MuseoSans_900.otf) format('opentype');
+    }
+
+    @font-face {
+      font-family: 'museo-sans';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://agenda-austria.at/Newsletter/MuseoSans_900.otf) format('opentype');
+    }
+
     @media only screen and (max-width: 480px) {
 
       /*
@@ -709,7 +660,7 @@
       .mcnBoxedTextContentContainer .mcnTextContent,
       .mcnBoxedTextContentContainer .mcnTextContent p {
         /*@editable*/
-        font-size: 16px !important;
+        font-size: 18px !important;
         /*@editable*/
         line-height: 125% !important;
       }
@@ -728,6 +679,27 @@
         display: block !important;
       }
 
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Italic';
+      font-style: italic;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Bold';
+      font-style: normal;
+      font-weight: bold;
+      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
     }
 
     @media only screen and (max-width: 480px) {
@@ -798,10 +770,20 @@
 
     }
 
-    .emailImage {
-      height: auto !important;
-      max-width: 600px !important;
-      width: 100% !important;
+    .div {
+      text-align: left;
+      margin-top: 0;
+    }
+
+    .link {
+      margin-top: -48px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .link {
+        margin-top: 10px !important;
+      }
+
     }
 
     .div {
@@ -810,7 +792,7 @@
     }
 
     .link {
-      margin-top: -12px;
+      margin-top: -48px;
     }
 
     @media only screen and (max-width: 480px) {
@@ -820,46 +802,11 @@
 
     }
 
-    .emailImage {
-      height: auto !important;
-      max-width: 600px !important;
-      width: 100% !important;
-    }
-
-    .link {
-      margin-top: -12px;
-    }
-
-    @media only screen and (max-width: 480px) {
-      .link {
-        margin-top: 10px !important;
-      }
-
-    }
-
-    .default-text {
-      -ms-hyphens: auto;
-      -webkit-hyphens: auto;
-      hyphens: auto;
-    }
-
-    .heading3 {
-      font-size: 24px;
-      font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important;
-    }
-
-    @media only screen and (max-width: 480px) {
-      table.heading3 {
-        font-size: 22px !important;
-      }
-
-    }
-
-    @media only screen and (max-width: 480px) {
-      table.heading3 {
-        font-size: 22px !important;
-      }
-
+    .big-title {
+      color: #27348b !important;
+      font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
+      font-style: normal !important;
+      font-weight: 900 !important;
     }
   </style>
 </head>
@@ -881,58 +828,86 @@
             <tr>
               <td align="center" valign="top">
                 <!-- BEGIN PREHEADER // -->
-                <table border="0" cellpadding="0" cellspacing="0" width="600">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                  id="templatePreheader">
                   <tr>
                     <td align="center" valign="top">
                       <table border="0" cellpadding="0" cellspacing="0"
-                        width="600"
-                        style="max-width: 600px; padding-top:9px;padding-bottom:9px;"
-                        class="templateContainer">
+                        width="600" class="templateContainer">
+                        <tr>
+                          <td valign="top" class="preheaderContainer"
+                            style="padding-top: 9px; padding-bottom: 9px">
+                            <table border="0" cellpadding="0" cellspacing="0"
+                              width="100%" class="mcnTextBlock"
+                              style="min-width: 100%">
+                              <tbody class="mcnTextBlockOuter">
+                                <tr>
+                                  <td valign="top" class="mcnTextBlockInner"
+                                    style="padding-top: 9px">
+                                    <!--[if mso]>
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                                        <tr>
+                                          <![endif]-->
 
-                        <table border="0" cellpadding="0" cellspacing="0"
-                          width="100%" style="width:100%;">
-                          <tr>
-                            <td valign="top" width="600" style="width:600px;">
-                              <table align="right" border="0" cellpadding="0"
-                                cellspacing="0"
-                                style="max-width:100%;min-width:100%;"
-                                width="100%" class="mcnTextContentContainer">
-                                <tbody>
-                                  <tr>
-                                    <td valign="top" class="mcnTextContent"
-                                      style="padding:0px 0px 9px;font-size:18px;line-height:125%;">
-                                      <div class="div">
-                                        <img mc:edit="headerbild"
-                                          style="margin: 0;padding: 0;height: auto !important;max-width: 600px !important;width: 100% !important;"
-                                          class="emailImage" width="600"
-                                          src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/83621cd9-cc4d-a7b8-f235-cf5b760f91b2.png"
-                                          alt="1407bb1f-1f8d-a6d6-3f91-7a364e34b117.png">
-                                      </div>
+                                    <!--[if mso]>
+                                      <td valign="top" width="600" style="width:600px;">
+                                        <![endif]-->
+                                    <table align="left" border="0"
+                                      cellpadding="0" cellspacing="0"
+                                      style="max-width: 100%; min-width: 100%"
+                                      width="100%"
+                                      class="mcnTextContentContainer">
+                                      <tbody>
+                                        <tr>
+                                          <td valign="top"
+                                            class="mcnTextContent" style="
+                                                padding: 0px 0px 9px;
+                                                font-size: 18px;
+                                                line-height: 125%;
+                                              ">
+                                            <div class="div">
+                                              <img
+                                                src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/83621cd9-cc4d-a7b8-f235-cf5b760f91b2.png"
+                                                alt="Agenda Austria Logo"
+                                                border="0"
+                                                style="height: 68px; width: 600px; margin: 0; padding: 0;"
+                                                width="600" height="68"
+                                                mc:edit="headerimage">
+                                              <a class="link" href="#link"
+                                                style="
+                                                    color: #ffffff;
+                                                    display: block;
+                                                    float: left;
+                                                    font-size: 12px;
+                                                    font-weight: normal;
+                                                    position: relative;
+                                                    text-align: center;
+                                                    text-decoration: underline;
+                                                  " target="_blank">
+                                                <u>&nbsp;</u>
+                                              </a>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <!--[if mso]>
                                     </td>
-                                  </tr>
-                                  <tr>
-                                    <td valign="top" align="right"
-                                      class="mcnTextContent"
-                                      style="padding:9px 0px 9px;font-size:18px;line-height:125%;">
-                                      <img width="100" height="100"
-                                        src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/4346cdc9-cac2-4ff8-741e-8b0904424f07.png"
-                                        alt="" border="0"
-                                        style="margin: 0; padding: 0; width: 100px !important; height: 100px !important; max-width: 100px !important;"
-                                        mc:edit="headerbild2" align="right">
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-
-
+                                    <![endif]-->
+                                    <!--[if mso]>
+                                    </tr>
+                                  </table>
+                                  <![endif]-->
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
                       </table>
                     </td>
                   </tr>
                 </table>
-
                 <!-- // END PREHEADER -->
               </td>
             </tr>
@@ -947,51 +922,26 @@
                         width="600" class="templateContainer">
                         <tr>
                           <td valign="top" class="headerContainer"
-                            style="padding-top:9px;">
+                            style="padding-top:9px;padding-bottom:9px;">
                             <table border="0" cellpadding="0" cellspacing="0"
-                              width="100%" class="mcnTextBlock"
+                              width="100%" class="mcnDividerBlock"
                               style="min-width:100%;">
-                              <tbody class="mcnTextBlockOuter">
+                              <tbody class="mcnDividerBlockOuter">
                                 <tr>
-                                  <td valign="top" class="mcnTextBlockInner"
-                                    style="padding-top:9px;">
-                                    <!--[if mso]>
-                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-                                        <tr>
-                                          <![endif]-->
-
-                                    <!--[if mso]>
-                                      <td valign="top" width="600" style="width:600px;">
-                                        <![endif]-->
-                                    <table align="left" border="0"
+                                  <td class="mcnDividerBlockInner"
+                                    style="min-width:100%;padding:10px 18px;">
+                                    <table class="mcnDividerContent" border="0"
                                       cellpadding="0" cellspacing="0"
-                                      style="max-width:100%;min-width:100%;"
-                                      width="100%"
-                                      class="mcnTextContentContainer">
+                                      width="100%" style="min-width:100%;">
                                       <tbody>
                                         <tr>
-                                          <td valign="top"
-                                            class="mcnTextContent"
-                                            style="padding:5px 0px 9px;font-size:18px;line-height:125%;">
-
-                                            <h2 class="link" mc:edit="date">
-                                              <span
-                                                class="mc-toc-title"><strong><span
-                                                    style="color:#27348b !important; ">09.09.2019</span></strong></span>
-                                            </h2>
-                                            <h1 mc:edit="headline">Oxfam weiß,
-                                              wie man Schlagzeilen macht.</h1>
+                                          <td>
+                                            <span></span>
                                           </td>
                                         </tr>
                                       </tbody>
                                     </table>
-                                    <!--[if mso]>
-                                    </td>
-                                    <![endif]-->
-                                    <!--[if mso]>
-                                    </tr>
-                                  </table>
-                                  <![endif]-->
+                  
                                   </td>
                                 </tr>
                               </tbody>
@@ -1041,159 +991,121 @@
                                         <tr>
                                           <td valign="top"
                                             class="mcnTextContent"
-                                            style="padding:0px 0px 9px;font-size:18px;line-height:125%;">
+                                            style="padding:0px 0px 29px;font-size:18px;line-height:125%;">
 
 
-                                            <h4 mc:edit="anrede">
-                                              *|ANREDEPERS|*!
-                                            </h4>
-                                            <p mc:edit="textfeld1">Wie viel
-                                              Urlaubs- und Feiertage haben die
-                                              Arbeitnehmer in Österreich
-                                              eigentlich insgesamt zur
-                                              Verfügung? Wo liegen wir damit im
-                                              internationalen Vergleich? Wie
-                                              viel Urlaubs- und Feiertage haben
-                                              die Arbeitnehmer in Österreich
-                                              eigentlich insgesamt zur
-                                              Verfügung? Wo liegen wir damit im
-                                              internationalen Vergleich? Wie
-                                              viel Urlaubs- und Feiertage haben
-                                              die Arbeitnehmer in Österreich
-                                              eigentlich insgesamt zur
-                                              Verfügung? Wo liegen wir damit im
-                                              internationalen Vergleich? </p>
-                                            <table border="0" cellpadding="0"
-                                              cellspacing="0">
-                                              <tbody>
-                                                <tr>
-                                                  <td
-                                                    style="padding-top:15px !important;padding-right:20px !important;padding-left: 20px !important;padding-bottom:10px !important;">
-                                                    <h3 class="heading3"
-                                                      style="font-family:'museo-sans-bold', Arial, Helvetica, sans-serif !important;font-weight:900 !important;color:#27348b !important;text-align: center;-ms-hyphens:auto;-webkit-hyphens:auto;line-height:125% !important;"
-                                                      mc:edit="zitat1">
-                                                      Donaudampfschiffahrt ist
-                                                      eine tolle Sache. Diese
-                                                      Silbentrennung
-                                                      funktioniert scheinbar
-                                                      ganz.  </h3>
-                                                  </td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                            <p class="default-text"
-                                              mc:edit="text1">Wie viel Urlaubs-
-                                              und Feiertage haben die
-                                              Arbeitnehmer in Österreich
-                                              eigentlich insgesamt zur
-                                              Verfügung? Wo liegen wir damit im
-                                              internationalen Vergleich? Wie
-                                              viel Urlaubs- und Feiertage haben
-                                              die Arbeitnehmer in Österreich
-                                              eigentlich insgesamt zur
-                                              Verfügung? Wo liegen wir damit im
-                                              internationalen Vergleich?  Wie
-                                              viel Urlaubs- und Feiertage haben
-                                              die Arbeitnehmer in Österreich
-                                              eigentlich insgesamt zur
-                                              Verfügung? Wo liegen wir damit im
-                                              internationalen Vergleich? </p>
-                                            <table border="0" cellpadding="0"
-                                              cellspacing="0">
-                                              <tbody>
-                                                <tr>
-                                                  <td
-                                                    style="padding-top:15px !important;padding-right:20px !important;padding-left: 20px !important;padding-bottom:10px !important;">
-                                                    <h3 class="heading3"
-                                                      mc:edit="zitat2"
-                                                      mc:hideable
-                                                      style="font-family:'museo-sans-bold', Arial, Helvetica, sans-serif !important;font-weight:900 !important;color:#27348b !important;text-align: center;-ms-hyphens:auto;-webkit-hyphens:auto;line-height:125% !important;">
-                                                      Es wird suggeriert, dass
-                                                      die Armen deshalb arm
-                                                      sind, weil die Reichen so
-                                                      reich sind.</h3>
-                                                  </td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                            <p mc:edit="textgruppe2"
-                                              class="default-text">Bereits die
-                                              ehemalige Parteichefin Pamela
-                                              Rendi-Wagner hat das idente Mo-
-                                              dell im August 2019
-                                              pr&auml;sentiert. Gegen&uuml;ber
-                                              der Zeit im Bild 1 meinte ich am
-                                              ver. gangenen Dienstag:
-                                              &bdquo;&Ouml;sterreich ist ein
-                                              H&ouml;chststeuerland, das keine
-                                              neuen Steuern braucht. Was
-                                              &Ouml;sterreich dringend braucht,
-                                              ist eine kr&auml;ftige Steuer,
-                                              sondern das schafft man damit,
-                                              dass der Staat seinen Ausgaben-
-                                              rausch endlich in den Griff
-                                              kriegt.&ldquo; &nbsp;<br>
-                                              <br>
-                                              Wer eine gleichm&auml;&szlig;igere
-                                              Verm&ouml;gensverteilung will,
-                                              muss den Eigentums- erwerb
-                                              f&ouml;rdern. Allein wenn die
-                                              Staatsausgaben gemessen an der
-                                              Wirt- schaftsleistung auf das
-                                              Vorkrisenniveau
-                                              zur&uuml;ckkehrten, ersparten sich
-                                              die Steuerzahler 18 Milliarden
-                                              Euro j&auml;hrlich. Also ein
-                                              Vielfaches dessen, was
-                                              Substanzsteuern je in der Lage
-                                              w&auml;ren einzus-
-                                              pielen.&nbsp;<br>
-                                              <br>
-                                              Unsere Kritik am
-                                              &bdquo;Babler-Plan&ldquo; wurde
-                                              von zahlreichen Medien
-                                              (<a href="https://www.orf.at/"
-                                                target="_blank">ORF.at</a>, <a
-                                                href="https://www.puls24.at/"
-                                                target="_blank">Puls24</a>,
-                                              &bdquo;<a
-                                                href="https://www.diepresse.com/"
-                                                target="_blank">Die
-                                                Presse</a>&ldquo;, &bdquo;<a
-                                                href="https://www.nachrichten.at/"
-                                                target="_blank">Ober&ouml;sterreichische
-                                                Nachrichten</a>&ldquo;,
-                                              &bdquo;<a
-                                                href="https://www.tt.com/"
-                                                target="_blank">Tiroler
-                                                Tageszeitung</a>&ldquo;,
-                                              &bdquo;<a
-                                                href="https://kurier.at/"
-                                                target="_blank">Kurier</a>&ldquo;)
-                                              &uuml;bernommen.<br>
-                                              <br>
-                                              Mit den besten
-                                              Gr&uuml;&szlig;en!<br>
-                                              <br>
-                                              Ihr
-                                            </p>
-                                            <img mc:edit="signature"
-                                              alt="71e12a46-8907-438e-bd24-9bd6840f9faf.jpg"
-                                              height="72"
-                                              src="https://gallery.mailchimp.com/841d829fd2147fc9a9bad49db/images/71e12a46-8907-438e-bd24-9bd6840f9faf.jpg"
-                                              style="border: 0px initial ; width: 200px; height: 72px; margin: 0px;"
-                                              width="200">
+                                            <h1 mc:edit="headline"
+                                              class="big-title null">Bei den
+                                              Feiertagen in der Spitzengruppe
+                                            </h1>
                                           </td>
                                         </tr>
                                       </tbody>
                                     </table>
                                     <!--[if mso]>
-                                      </td>
-                                      <![endif]-->
-                                    <!--[if mso]>
-                                      </tr>
-                                    </table>
+                                    </td>
                                     <![endif]-->
+                                    <!--[if mso]>
+                                    </tr>
+                                  </table>
+                                  <![endif]-->
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0"
+                              width="100%" class="mcnTextBlock"
+                              style="min-width:100%;">
+                              <tbody class="mcnTextBlockOuter">
+                                <tr>
+                                  <td valign="top" class="mcnTextBlockInner"
+                                    style="padding-top:9px;">
+                                    <!--[if mso]>
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                                        <tr>
+                                          <![endif]-->
+
+                                    <!--[if mso]>
+                                      <td valign="top" width="600" style="width:600px;">
+                                        <![endif]-->
+                                    <table align="left" border="0"
+                                      cellpadding="0" cellspacing="0"
+                                      style="max-width:100%;min-width:100%;"
+                                      width="100%"
+                                      class="mcnTextContentContainer">
+                                      <tbody>
+                                        <tr>
+                                          <td valign="top"
+                                            class="mcnTextContent"
+                                            style="padding:0px 0px 9px;font-size:18px;line-height:125%;">
+
+                                            <h4 mc:edit="head2"
+                                              class="fliesstext">
+                                              <strong>*|ANREDEPERS|*!</strong>
+                                            </h4>
+
+                                            <p style="font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important; font-style: normal !important; font-weight: normal !important; font-size: 18px; "
+                                              mc:edit="bodytext">
+                                              F&uuml;r viele wird diese Woche
+                                              wieder eine kurze Arbeitswoche
+                                              werden, denn am Donnerstag ist
+                                              Fronleichnam. Womit es im heurigen
+                                              Mai nur eine Woche ohne Feiertag
+                                              gegeben haben wird.<br>
+                                              &nbsp;<br>
+                                              Wie viel Urlaubs- und Feiertage
+                                              haben die Arbeitnehmer in
+                                              &Ouml;sterreich eigentlich
+                                              insgesamt zur Verf&uuml;gung? Wo
+                                              liegen wir damit im
+                                              internationalen
+                                              Vergleich?&nbsp;<br>
+                                            </p>
+
+                                            <img height="631"
+                                              src="https://gallery.mailchimp.com/841d829fd2147fc9a9bad49db/images/02666bf4-e289-45d2-add9-3fc7766b7d7a.png"
+                                              style="border: 0px  ; width: 600px; height: 631px; margin: 0px;"
+                                              width="600"
+                                              mc:edit="bodyimage"><br>
+                                            <p style="font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important; font-style: normal !important; font-weight: normal !important; font-size: 18px; "
+                                              mc:edit="bodytextafter">
+                                              <br>
+                                              Bei den freien Tagen geh&ouml;rt
+                                              &Ouml;sterreich also zu den
+                                              &bdquo;Top-6&ldquo; in der EU und
+                                              damit zu den Spitzenreitern.
+                                              Hierzulande kann sich ein
+                                              Vollzeitbesch&auml;ftigter
+                                              &uuml;ber j&auml;hrlich 25
+                                              Urlaubstage und 13 gesetzliche
+                                              Feiertage freuen. &nbsp;<br>
+                                              <br>
+                                              Nur in Spanien, Finnland,
+                                              Frankreich, Estland und Litauen
+                                              haben die Arbeitnehmer mehr freie
+                                              Tage zur Verf&uuml;gung. 10
+                                              Feiertage sind in &Ouml;sterreich
+                                              &uuml;brigens kirchlicher, 3
+                                              gesetzlicher Natur.&nbsp;<br>
+                                              <br>
+                                              Mit den besten
+                                              Gr&uuml;&szlig;en<br>
+                                              <br>
+                                              Ihre<br>
+                                              Agenda Austria
+
+                                            </p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <!--[if mso]>
+                                    </td>
+                                    <![endif]-->
+                                    <!--[if mso]>
+                                    </tr>
+                                  </table>
+                                  <![endif]-->
                                   </td>
                                 </tr>
                               </tbody>
@@ -1262,7 +1174,6 @@
                                                               color: #000000;
                                                               padding-top: 0;
                                                               margin: 0;
-                                                              line-height: 1;
                                                             "
                                                           class="footer-link-bold">
                                                           In Kontakt bleiben
@@ -1505,6 +1416,43 @@
                                   </tbody>
                                 </table>
 
+                                <table border="0" cellpadding="0"
+                                  cellspacing="0"
+                                  class="mcnTextContentContainer">
+                                  <tbody>
+                                    <tr>
+                                      <td class="mcnTextContent" style="
+                                            padding: 28px 0px 9px;
+                                            font-size: 18px;
+                                            line-height: 125%;
+                                          ">
+                                        <span style="
+                                              font-size: 16px;
+                                              font-family: sabonnextltpro-regular,
+                                                georgia, times, serif !important;
+                                              color: #000000;
+                                            " mc:edit="datenschutz">
+                                          Der Veranstalter informiert, dass er
+                                          bei der Veranstaltung Lichtbilder
+                                          und Videoaufzeichnungen zu (auch die
+                                          Veranstaltung und den Veranstalter
+                                          bewerbenden) Dokumentationszwecken
+                                          erstellen lässt. Daran hat der
+                                          Veranstalter ein überwiegendes
+                                          berechtigtes Interesse im Sinne des
+                                          § 12 Abs 3 Z 3 DSG. Weitere
+                                          Informationen finden Sie in unseren
+                                          <a style="color: #000000"
+                                            href="https://www.agenda-austria.at/datenschutz/"
+                                            target="_blank">
+                                            Datenschutzbestimmungen
+                                          </a>
+                                          .
+                                        </span>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </td>
                             </tr>
                           </tbody>
