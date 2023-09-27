@@ -219,8 +219,7 @@
 	@tip Set the background color and borders for your email's preheader area.
 	*/
     #templatePreheader {
-      /*@editable*/
-      /* background-color:#; */
+      @editablebackground-color: #;
       /*@editable*/
       border-top: 0;
       /*@editable*/
@@ -253,7 +252,7 @@
 	*/
     .preheaderContainer .mcnTextContent a {
       /*@editable*/
-      color: #27348b;
+      color: #74c19d;
       /*@editable*/
       font-weight: bold;
       /*@editable*/
@@ -267,7 +266,7 @@
 	*/
     #templateHeader {
       /*@editable*/
-      /* background-color:#; */
+      /* background-color: #; */
       /*@editable*/
       border-top: 0;
       /*@editable*/
@@ -304,7 +303,7 @@
       /*@editable*/
       font-weight: bold;
       /*@editable*/
-      text-decoration: none;
+      /* text-decoration: none; */
     }
 
     /*
@@ -314,7 +313,7 @@
 	*/
     #templateBody {
       /*@editable*/
-      /* background-color:#; */
+      /* background-color: #; */
       /*@editable*/
       border-top: 0;
       /*@editable*/
@@ -349,13 +348,13 @@
 	*/
     .bodyContainer .mcnTextContent a {
       /*@editable*/
-      color: #27348b;
+      color: #000000;
       /*@editable*/
-      font-weight: bold;
+      font-weight: 700;
       /*@editable*/
-      /* text-decoration:none; */
+      font-family: 'museo-sans', Arial, Helvetica, sans-serif !important;
       /*@editable*/
-      font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
+      /* text-decoration: none; */
     }
 
     /*
@@ -402,7 +401,7 @@
       /*@editable*/
       font-weight: bold;
       /*@editable*/
-      text-decoration: none;
+      /* text-decoration: none; */
     }
 
     @media only screen and (max-width: 480px) {
@@ -622,6 +621,23 @@
 
     }
 
+    @media only screen and (max-width: 480px) {
+
+      /*
+	@tab Mobile Styles
+	@section Boxed Text
+	@tip Make the boxed text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+	*/
+      .mcnBoxedTextContentContainer .mcnTextContent,
+      .mcnBoxedTextContentContainer .mcnTextContent p {
+        /*@editable*/
+        font-size: 18px !important;
+        /*@editable*/
+        line-height: 125% !important;
+      }
+
+    }
+
     @font-face {
       font-family: 'SabonNextLTPro-Italic';
       font-style: italic;
@@ -643,21 +659,19 @@
       src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
     }
 
-    @media only screen and (max-width: 480px) {
+    @font-face {
+      font-family: 'museo-sans-bold';
+      font-style: normal;
+      font-weight: 900;
+      src: url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_900.woff) format('woff'), url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_900.otf) format('opentype');
+    }
 
-      /*
-	@tab Mobile Styles
-	@section Boxed Text
-	@tip Make the boxed text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-	*/
-      .mcnBoxedTextContentContainer .mcnTextContent,
-      .mcnBoxedTextContentContainer .mcnTextContent p {
-        /*@editable*/
-        font-size: 18px !important;
-        /*@editable*/
-        line-height: 125% !important;
-      }
-
+    @font-face {
+      font-family: 'museo-sans';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_700.woff) format('woff'), url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_700.otf) format('opentype');
+      ;
     }
 
     @media only screen and (max-width: 480px) {
@@ -708,6 +722,23 @@
 
     }
 
+    @media only screen and (max-width: 480px) {
+
+      /*
+	@tab Mobile Styles
+	@section Body Text
+	@tip Make the body text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+	*/
+      .bodyContainer .mcnTextContent,
+      .bodyContainer .mcnTextContent p {
+        /*@editable*/
+        font-size: 16px !important;
+        /*@editable*/
+        line-height: 125% !important;
+      }
+
+    }
+
     @font-face {
       font-family: 'SabonNextLTPro-Italic';
       font-style: italic;
@@ -727,23 +758,6 @@
       font-style: normal;
       font-weight: bold;
       src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
-    }
-
-    @media only screen and (max-width: 480px) {
-
-      /*
-	@tab Mobile Styles
-	@section Body Text
-	@tip Make the body text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-	*/
-      .bodyContainer .mcnTextContent,
-      .bodyContainer .mcnTextContent p {
-        /*@editable*/
-        font-size: 16px !important;
-        /*@editable*/
-        line-height: 125% !important;
-      }
-
     }
 
     @media only screen and (max-width: 480px) {
@@ -807,12 +821,6 @@
 
     }
 
-    .big-title {
-      color: #27348b !important;
-      font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
-      font-style: normal !important;
-      font-weight: 900 !important;
-    }
   </style>
 </head>
 
@@ -1088,31 +1096,15 @@
                                 </tr>
                               </tbody>
                             </table>
-                            <table border="0" cellpadding="0" cellspacing="0"
-                              width="100%" class="mcnButtonBlock"
-                              style="min-width:100%;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
                               <tbody class="mcnButtonBlockOuter">
                                 <tr>
-                                  <td
-                                    style="padding-top:0;padding-right:18px;padding-bottom:18px;padding-left:18px;"
-                                    valign="top" align="center"
-                                    class="mcnButtonBlockInner">
-                                    <table border="0" cellpadding="0"
-                                      cellspacing="0"
-                                      class="mcnButtonContentContainer"
-                                      style="border-collapse:separate !important;border-radius:3px;background-color:#253483;">
+                                  <td  valign="top" align="center" class="mcnButtonBlockInner">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse:separate !important;">
                                       <tbody>
                                         <tr>
-                                          <td align="center" valign="middle"
-                                            class="mcnButtonContent"
-                                            style="font-family:Arial;font-size:16px;padding:15px;">
-                                            <a class="mcnButton"
-                                              title="Spenden-Abo beenden"
-                                              href="*|DONATION_END_URL|*"
-                                              target="_blank"
-                                              style="font-weight:bold;letter-spacing:normal;line-height:100%;text-align:center;text-decoration:none;color:#FFFFFF;"
-                                              mc:edit="button">Spenden-Abo
-                                              beenden</a>
+                                          <td style="padding-top:20px;padding-right:30px;padding-bottom:20px;padding-left:30px; background-color: #27348b;" align="center" valign="middle" class="mcnButtonContent">
+                                            <a class="mcnButton" title="Spenden-Abo beenden" href="*|DONATION_END_URL|*" target="_blank" style="font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important; font-weight: bold; letter-spacing: normal; line-height: 100%; text-align: center; text-decoration: none; color: #FFFFFF;" mc:edit="button">Spenden-Abo beenden</a>
                                           </td>
                                         </tr>
                                       </tbody>
@@ -1121,6 +1113,7 @@
                                 </tr>
                               </tbody>
                             </table>
+                            
                             <table border="0" cellpadding="0" cellspacing="0"
                               width="100%" class="mcnTextBlock"
                               style="min-width:100%;">

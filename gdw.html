@@ -21,7 +21,25 @@
 
 
 
+
+
   <style type="text/css">
+    :root {
+      --darkBlue: #27348b;
+      --turquoise: #8ccaae;
+      --yellow: #f9b000;
+      --violet: #a877b2;
+      --orange: #e84e0f;
+      --beige: #caa87d;
+      --darkGreen: #4f6527;
+      --petrol: #006780;
+      --lightBlue: #009fe3;
+      --black: #000000;
+      --white: #ffffff;
+      --accentColor: var(--orange);
+      --accentContrastColor: var(--black);
+    }
+
     p {
       margin: 10px 0;
       padding: 0;
@@ -178,7 +196,7 @@
 	*/
     h1 {
       /*@editable*/
-      color: #27348b !important;
+      color: #e84e0f !important;
       /*@editable*/
       font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
       /*@editable*/
@@ -252,7 +270,7 @@
 	*/
     .preheaderContainer .mcnTextContent a {
       /*@editable*/
-      color: #27348b;
+      color: #e84e0f;
       /*@editable*/
       font-weight: bold;
       /*@editable*/
@@ -297,7 +315,7 @@
 	*/
     .headerContainer .mcnTextContent a {
       /*@editable*/
-      color: #27348b;
+      color: #e84e0f;
       /*@editable*/
       font-weight: bold;
       /*@editable*/
@@ -344,7 +362,7 @@
 	*/
     .bodyContainer .mcnTextContent a {
       /*@editable*/
-      color: #27348b;
+      color: #e84e0f;
       /*@editable*/
       font-weight: bold;
       /*@editable*/
@@ -391,7 +409,7 @@
 	*/
     .footerContainer .mcnTextContent a {
       /*@editable*/
-      color: #27348b;
+      color: #e84e0f;
       /*@editable*/
       font-weight: bold;
       /*@editable*/
@@ -551,6 +569,42 @@
 
     }
 
+    @font-face {
+      font-family: 'SabonNextLTPro-Italic';
+      font-style: italic;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Bold';
+      font-style: normal;
+      font-weight: bold;
+      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'museo-sans-bold';
+      font-style: normal;
+      font-weight: 900;
+      src: url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_900.woff) format('woff'), url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_900.otf) format('opentype');
+    }
+
+    @font-face {
+      font-family: 'museo-sans';
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_700.woff) format('woff'), url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_700.otf) format('opentype');
+      ;
+    }
+
     @media only screen and (max-width: 480px) {
 
       /*
@@ -581,41 +635,6 @@
         line-height: 125% !important;
       }
 
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Italic';
-      font-style: italic;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Regular';
-      font-style: normal;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Bold';
-      font-style: normal;
-      font-weight: bold;
-      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'museo-sans-bold';
-      font-style: normal;
-      font-weight: 900;
-      src: url(https://agenda-austria.at/Newsletter/MuseoSans_900.otf) format('opentype');
-    }
-
-    @font-face {
-      font-family: 'museo-sans';
-      font-style: normal;
-      font-weight: 700;
-      src: url(https://agenda-austria.at/Newsletter/MuseoSans_900.otf) format('opentype');
     }
 
     @media only screen and (max-width: 480px) {
@@ -650,6 +669,27 @@
 
     }
 
+    @font-face {
+      font-family: 'SabonNextLTPro-Italic';
+      font-style: italic;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format("opentype");
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Bold';
+      font-style: normal;
+      font-weight: bold;
+      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
+    }
+
     @media only screen and (max-width: 480px) {
 
       /*
@@ -679,27 +719,6 @@
         display: block !important;
       }
 
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Italic';
-      font-style: italic;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Regular';
-      font-style: normal;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format("opentype");
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Bold';
-      font-style: normal;
-      font-weight: bold;
-      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format("woff"), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format("opentype");
     }
 
     @media only screen and (max-width: 480px) {
@@ -803,7 +822,7 @@
     }
 
     .big-title {
-      color: #27348b !important;
+      color: #e84e0f !important;
       font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
       font-style: normal !important;
       font-weight: 900 !important;
@@ -867,9 +886,8 @@
                                               ">
                                             <div class="div">
                                               <img
-                                                src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/83621cd9-cc4d-a7b8-f235-cf5b760f91b2.png"
-                                                alt="Agenda Austria Logo"
-                                                border="0"
+                                                src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/fbd4abc2-8f06-6ff0-956b-15c5e4933c6a.png"
+                                                alt="" border="0"
                                                 style="height: 68px; width: 600px; margin: 0; padding: 0;"
                                                 width="600" height="68"
                                                 mc:edit="headerimage">
@@ -1045,54 +1063,35 @@
 
                                             <p style="font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important; font-style: normal !important; font-weight: normal !important; font-size: 18px; "
                                               mc:edit="bodytext">
-                                              F&uuml;r viele wird diese Woche
+                                            <p>Für viele wird diese Woche
                                               wieder eine kurze Arbeitswoche
                                               werden, denn am Donnerstag ist
                                               Fronleichnam. Womit es im heurigen
                                               Mai nur eine Woche ohne Feiertag
-                                              gegeben haben wird.<br>
-                                              &nbsp;<br>
-                                              Wie viel Urlaubs- und Feiertage
-                                              haben die Arbeitnehmer in
-                                              &Ouml;sterreich eigentlich
-                                              insgesamt zur Verf&uuml;gung? Wo
-                                              liegen wir damit im
-                                              internationalen
-                                              Vergleich?&nbsp;<br>
+                                              gegeben haben wird. Wie viel
+                                              Urlaubs- und Feiertage haben die
+                                              Arbeitnehmer in Österreich
+                                              eigentlich insgesamt zur
+                                              Verfügung? Wo liegen wir damit im
+                                              internationalen Vergleich?</p>
                                             </p>
 
-                                            <img height="631"
+                                            <img
                                               src="https://gallery.mailchimp.com/841d829fd2147fc9a9bad49db/images/02666bf4-e289-45d2-add9-3fc7766b7d7a.png"
-                                              style="border: 0px  ; width: 600px; height: 631px; margin: 0px;"
-                                              width="600"
+                                              alt="" border="0"
+                                              style="height: 689px; width: 600px; margin: 0; padding: 0;"
+                                              width="600" height="689"
                                               mc:edit="bodyimage"><br>
                                             <p style="font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important; font-style: normal !important; font-weight: normal !important; font-size: 18px; "
                                               mc:edit="bodytextafter">
-                                              <br>
-                                              Bei den freien Tagen geh&ouml;rt
-                                              &Ouml;sterreich also zu den
+                                            <p>Bei den freien Tagen gehört
+                                              Österreich also zu den
                                               &bdquo;Top-6&ldquo; in der EU und
                                               damit zu den Spitzenreitern.
                                               Hierzulande kann sich ein
-                                              Vollzeitbesch&auml;ftigter
-                                              &uuml;ber j&auml;hrlich 25
-                                              Urlaubstage und 13 gesetzliche
-                                              Feiertage freuen. &nbsp;<br>
-                                              <br>
-                                              Nur in Spanien, Finnland,
-                                              Frankreich, Estland und Litauen
-                                              haben die Arbeitnehmer mehr freie
-                                              Tage zur Verf&uuml;gung. 10
-                                              Feiertage sind in &Ouml;sterreich
-                                              &uuml;brigens kirchlicher, 3
-                                              gesetzlicher Natur.&nbsp;<br>
-                                              <br>
-                                              Mit den besten
-                                              Gr&uuml;&szlig;en<br>
-                                              <br>
-                                              Ihre<br>
-                                              Agenda Austria
-
+                                              Vollzeitbeschäftigter über
+                                              jährlich 25 Urlaubstage und 13
+                                              gesetzliche Feiertage freuen.</p>
                                             </p>
                                           </td>
                                         </tr>
@@ -1178,7 +1177,7 @@
                                                           class="footer-link-bold">
                                                           In Kontakt bleiben
                                                         </span>
-                                                        <br />
+                                                        <br>
                                                         <!-- Social Media Icons -->
                                                         <table>
                                                           <tbody>
@@ -1203,7 +1202,7 @@
                                                                         width: auto;
                                                                       "
                                                                     src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/69932fac-dacd-51fa-a805-bd8558bf71e0.png"
-                                                                    alt="facebook icon" />
+                                                                    alt="facebook icon">
                                                                 </a>
                                                               </td>
                                                               <td style="
@@ -1226,7 +1225,7 @@
                                                                         width: auto;
                                                                       "
                                                                     src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/81cf9deb-a23f-eb72-705f-14f4a23e8fa1.png"
-                                                                    alt="twitter icon" />
+                                                                    alt="twitter icon">
                                                                 </a>
                                                               </td>
                                                               <td style="
@@ -1249,7 +1248,7 @@
                                                                         width: auto;
                                                                       "
                                                                     src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/0732011e-e2c2-496a-b368-44e1ea36e923.png"
-                                                                    alt="SM_Y.png" />
+                                                                    alt="SM_Y.png">
                                                                 </a>
                                                               </td>
                                                               <td style="
@@ -1272,7 +1271,7 @@
                                                                         width: auto;
                                                                       "
                                                                     src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/59c41387-bf1b-89db-34fe-0159b0dc4d03.png"
-                                                                    alt="instagram icon" />
+                                                                    alt="instagram icon">
                                                                 </a>
                                                               </td>
                                                               <td style="
@@ -1295,7 +1294,7 @@
                                                                         width: auto;
                                                                       "
                                                                     src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/11699d29-9a8c-6fd6-13e5-ffcd475eeede.png"
-                                                                    alt="tiktok icon" />
+                                                                    alt="tiktok icon">
                                                                 </a>
                                                               </td>
                                                               <td>
@@ -1316,7 +1315,7 @@
                                                                         width: auto;
                                                                       "
                                                                     src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/68af523e-5785-f9ea-8e53-9fe4390becc8.png"
-                                                                    alt="linkedin icon " />
+                                                                    alt="linkedin icon ">
                                                                 </a>
                                                               </td>
                                                             </tr>
@@ -1356,7 +1355,7 @@
                                                               font-family: 'museo-sans',
                                                                 Arial, Helvetica,
                                                                 sans-serif !important;
-                                                              color: #27348b;
+                                                              color: #e84e0f;
                                                               font-size: 16px;
                                                               font-weight: 700;
                                                               line-height: 125%;
@@ -1369,12 +1368,12 @@
                                                           View this email in
                                                           your browser
                                                         </a>
-                                                        <br />
+                                                        <br>
                                                         <a style="
                                                               font-family: 'museo-sans',
                                                                 Arial, Helvetica,
                                                                 sans-serif !important;
-                                                              color: #27348b;
+                                                              color: #e84e0f;
                                                               font-size: 16px;
                                                               font-weight: 700;
                                                               line-height: 125%;
@@ -1386,12 +1385,12 @@
                                                           Einstellungen
                                                           anpassen
                                                         </a>
-                                                        <br />
+                                                        <br>
                                                         <a style="
                                                               font-family: 'museo-sans',
                                                                 Arial, Helvetica,
                                                                 sans-serif !important;
-                                                              color: #27348b;
+                                                              color: #e84e0f;
                                                               font-size: 16px;
                                                               font-weight: 700;
                                                               line-height: 125%;
@@ -1416,43 +1415,6 @@
                                   </tbody>
                                 </table>
 
-                                <table border="0" cellpadding="0"
-                                  cellspacing="0"
-                                  class="mcnTextContentContainer">
-                                  <tbody>
-                                    <tr>
-                                      <td class="mcnTextContent" style="
-                                            padding: 28px 0px 9px;
-                                            font-size: 18px;
-                                            line-height: 125%;
-                                          ">
-                                        <span style="
-                                              font-size: 16px;
-                                              font-family: sabonnextltpro-regular,
-                                                georgia, times, serif !important;
-                                              color: #000000;
-                                            " mc:edit="datenschutz">
-                                          Der Veranstalter informiert, dass er
-                                          bei der Veranstaltung Lichtbilder
-                                          und Videoaufzeichnungen zu (auch die
-                                          Veranstaltung und den Veranstalter
-                                          bewerbenden) Dokumentationszwecken
-                                          erstellen lässt. Daran hat der
-                                          Veranstalter ein überwiegendes
-                                          berechtigtes Interesse im Sinne des
-                                          § 12 Abs 3 Z 3 DSG. Weitere
-                                          Informationen finden Sie in unseren
-                                          <a style="color: #000000"
-                                            href="https://www.agenda-austria.at/datenschutz/"
-                                            target="_blank">
-                                            Datenschutzbestimmungen
-                                          </a>
-                                          .
-                                        </span>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
                               </td>
                             </tr>
                           </tbody>

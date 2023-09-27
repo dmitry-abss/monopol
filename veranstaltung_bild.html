@@ -14,10 +14,11 @@
         </o:OfficeDocumentSettings>
       </xml>
     <![endif]-->
-  <meta charset="UTF-8" />
-  <meta http-equiv="x-ua-compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>*|MC:SUBJECT|*</title>
+
 
   <style type="text/css">
     :root {
@@ -32,7 +33,7 @@
       --lightBlue: #009fe3;
       --black: #000000;
       --white: #ffffff;
-      --accentColor: var(--orange);
+      --accentColor: var(--yellow);
       --accentContrastColor: var(--black);
     }
 
@@ -106,8 +107,8 @@
       mso-line-height-rule: exactly;
     }
 
-    a[href^='tel'],
-    a[href^='sms'] {
+    a[href^=tel],
+    a[href^=sms] {
       color: inherit;
       cursor: default;
       text-decoration: none;
@@ -192,7 +193,7 @@
 	*/
     h1 {
       /*@editable*/
-      color: #e84e0f !important;
+      color: #f9b000 !important;
       /*@editable*/
       font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
       /*@editable*/
@@ -211,7 +212,7 @@
 
     h2 {
       /*@editable*/
-      color: #ffffff !important;
+      color: #000000 !important;
       /*@editable*/
       font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
       /*@editable*/
@@ -253,8 +254,6 @@
 	@tip Set the background color and borders for your email's preheader area.
 	*/
     #templatePreheader {
-      /*@editable*/
-      /* background-color: #; */
       /*@editable*/
       border-top: 0;
       /*@editable*/
@@ -300,8 +299,6 @@
 	@tip Set the background color and borders for your email's header area.
 	*/
     #templateHeader {
-      /*@editable*/
-      /* background-color: #; */
       /*@editable*/
       border-top: 0;
       /*@editable*/
@@ -416,8 +413,6 @@
       /*@editable*/
       color: #000000;
       /*@editable*/
-      /* font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif; */
-      /*@editable*/
       font-size: 10px;
       /*@editable*/
       line-height: 125%;
@@ -432,7 +427,7 @@
 	*/
     .footerContainer .mcnTextContent a {
       /*@editable*/
-      color: #e84e0f;
+      color: #f9b000;
       /*@editable*/
       font-weight: 700;
       /*@editable*/
@@ -450,6 +445,7 @@
       blockquote {
         -webkit-text-size-adjust: none !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -457,6 +453,7 @@
         width: 100% !important;
         min-width: 100% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -464,12 +461,14 @@
         max-width: 600px !important;
         width: 100% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
       .mcnRetinaImage {
         max-width: 100% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -477,6 +476,7 @@
         height: auto !important;
         width: 100% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -499,18 +499,42 @@
         max-width: 100% !important;
         width: 100% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
       .mcnBoxedTextContentContainer {
         min-width: 100% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
       .mcnImageGroupContent {
         padding: 9px !important;
       }
+
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Italic';
+      font-style: italic;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format('woff'), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format('opentype');
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format('woff'), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format('opentype');
+    }
+
+    @font-face {
+      font-family: 'SabonNextLTPro-Bold';
+      font-style: normal;
+      font-weight: bold;
+      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format('woff'), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format('opentype');
     }
 
     @media only screen and (max-width: 480px) {
@@ -519,6 +543,7 @@
       .mcnCaptionRightContentOuter .mcnTextContent {
         padding-top: 9px !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -528,39 +553,14 @@
       .mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent {
         padding-top: 18px !important;
       }
-    }
 
-    @font-face {
-      font-family: 'SabonNextLTPro-Italic';
-      font-style: italic;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Italic),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format('woff'),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format('opentype');
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Regular';
-      font-style: normal;
-      font-weight: normal;
-      src: local(SabonNextLTPro-Regular),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format('woff'),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format('opentype');
-    }
-
-    @font-face {
-      font-family: 'SabonNextLTPro-Bold';
-      font-style: normal;
-      font-weight: bold;
-      src: local(SabonNextLTPro-Bold),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format('woff'),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format('opentype');
     }
 
     @media only screen and (max-width: 480px) {
       .mcnImageCardBottomImageContent {
         padding-bottom: 9px !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -568,49 +568,28 @@
         padding-top: 0 !important;
         padding-bottom: 0 !important;
       }
-    }
 
-    @media only screen and (max-width: 480px) {
-      .mcnImageGroupBlockOuter {
-        padding-top: 9px !important;
-        padding-bottom: 9px !important;
-      }
-    }
-
-    @media only screen and (max-width: 480px) {
-
-      .mcnTextContent,
-      .mcnBoxedTextContentColumn {
-        padding-right: 18px !important;
-        padding-left: 18px !important;
-      }
     }
 
     @font-face {
       font-family: 'SabonNextLTPro-Italic';
       font-style: italic;
       font-weight: normal;
-      src: local(SabonNextLTPro-Italic),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format('woff'),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format('opentype');
+      src: local(SabonNextLTPro-Italic), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.woff) format('woff'), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Italic.otf) format('opentype');
     }
 
     @font-face {
       font-family: 'SabonNextLTPro-Regular';
       font-style: normal;
       font-weight: normal;
-      src: local(SabonNextLTPro-Regular),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format('woff'),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format('opentype');
+      src: local(SabonNextLTPro-Regular), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.woff) format('woff'), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Regular.otf) format('opentype');
     }
 
     @font-face {
       font-family: 'SabonNextLTPro-Bold';
       font-style: normal;
       font-weight: bold;
-      src: local(SabonNextLTPro-Bold),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format('woff'),
-        url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format('opentype');
+      src: local(SabonNextLTPro-Bold), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.woff) format('woff'), url(https://files.qmax.us/agenda/newsletter/fonts/SaboNextLTPro/SabonNextLTPro-Bold.otf) format('opentype');
     }
 
     @font-face {
@@ -624,7 +603,26 @@
       font-family: 'museo-sans';
       font-style: normal;
       font-weight: 700;
-      src: url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_700.woff) format('woff'), url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_700.otf) format('opentype');;
+      src: url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_700.woff) format('woff'), url(https://raw.githubusercontent.com/dmitry-abss/monopol/main/fonts/MuseoSans_700.otf) format('opentype');
+      ;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .mcnImageGroupBlockOuter {
+        padding-top: 9px !important;
+        padding-bottom: 9px !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+
+      .mcnTextContent,
+      .mcnBoxedTextContentColumn {
+        padding-right: 18px !important;
+        padding-left: 18px !important;
+      }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -635,6 +633,7 @@
         padding-bottom: 0 !important;
         padding-left: 18px !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -642,6 +641,7 @@
         display: none !important;
         width: 100% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -657,6 +657,7 @@
         /*@editable*/
         line-height: 100% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -672,6 +673,7 @@
         /*@editable*/
         line-height: 125% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -687,6 +689,7 @@
         /*@editable*/
         line-height: 125% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -702,6 +705,7 @@
         /*@editable*/
         line-height: 125% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -718,6 +722,7 @@
         /*@editable*/
         line-height: 125% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -731,6 +736,7 @@
         /*@editable*/
         display: block !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -747,6 +753,7 @@
         /*@editable*/
         line-height: 115% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -763,6 +770,7 @@
         /*@editable*/
         line-height: 125% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -779,6 +787,7 @@
         /*@editable*/
         line-height: 125% !important;
       }
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -795,6 +804,7 @@
         /*@editable*/
         line-height: 115% !important;
       }
+
     }
 
     .emailImage {
@@ -820,7 +830,7 @@
     }
 
     .big-title {
-      color: #e84e0f !important;
+      color: #f9b000 !important;
       font-family: 'museo-sans-bold', Arial, Helvetica, sans-serif !important;
       font-style: normal !important;
       font-weight: 900 !important;
@@ -913,18 +923,12 @@
                                                           max-width: 600px !important;
                                                           width: 100% !important;
                                                         " class="div">
-                                                      <img class="emailImage"
-                                                        src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/fbd4abc2-8f06-6ff0-956b-15c5e4933c6a.png"
-                                                        width="100%"
-                                                        alt="Agenda Austria Logo"
-                                                        border="0" style="
-                                                            margin: 0;
-                                                            padding: 0;
-                                                            height: auto !important;
-                                                            max-width: 600px !important;
-                                                            width: 100% !important;
-                                                          "
-                                                        mc:edit="headerimage" />
+                                                      <img
+                                                        src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/5cbda32d-70ac-7ba7-50c5-4d556b786e86.png"
+                                                        alt="" border="0"
+                                                        style="height: 68px; width: 600px; margin: 0; padding: 0;"
+                                                        width="600" height="68"
+                                                        mc:edit="headerimage">
                                                       <a class="link"
                                                         href="*|ARCHIVE|*"
                                                         style="
@@ -1073,7 +1077,7 @@
                                                     <h1 mc:edit="headline"
                                                       class="big-title null"
                                                       style="
-                                                          color: #e84e0f !important;
+                                                          color: #f9b000 !important;
                                                           font-family: 'museo-sans-bold',
                                                             Arial, Helvetica,
                                                             sans-serif !important;
@@ -1161,10 +1165,56 @@
                                         </tr>
                                       </tbody>
                                     </table>
+
+                                    <!--[if mso]>
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;max-width: 600px !important">
+                                        <tr>
+                                          <![endif]-->
+
+                                    <!--[if mso]>
+                                      <td valign="top" width="600" style="width:600px;max-width: 600px !important">
+                                        <![endif]-->
+                                    <table style="
+                                        min-width: 100%;
+                                        max-width: 600px !important;
+                                        width: 100% !important;
+                                      " class="mcnTextContentContainer"
+                                      width="100%" cellspacing="0"
+                                      cellpadding="0" border="0" align="left">
+                                      <tbody>
+                                        <tr>
+                                          <td class="" style="
+                                              padding: 0px 0px 9px;
+                                              font-size: 18px;
+                                              line-height: 125%;
+                                              max-width: 600px !important;
+                                              width: 100% !important;
+                                            " valign="top">
+                                            <div style="
+                                                max-width: 600px !important;
+                                                width: 100% !important;
+                                              " class="div">
+                                              <img
+                                                src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/6fa7feb2-0650-623a-6594-afbfcd06340c.gif"
+                                                alt="" border="0"
+                                                style="height: 338px; width: 600px; margin: 0; padding: 0;"
+                                                width="600" height="338"
+                                                mc:edit="bodyimage">
+
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <!--[if mso]>
+                          </td>
+                          <![endif]-->
+                                    <!--[if mso]>
+
                                     <!-- cta block -->
                                     <table class="mcnTextBlock" style="
                                           min-width: 100%;
-                                          background-color: #e84e0f;
+                                          background-color: #f9b000;
                                           border: #ffffff;
                                         " width="100%" cellspacing="0"
                                       cellpadding="0" border="0">
@@ -1193,7 +1243,7 @@
                                                     valign="top"> -->
                                             <!-- 
                                                     <div class="mcnTextContent"
-                                                      style="background-color:#e84e0f;border:#FFFFFF;padding:30px;"> -->
+                                                      style="background-color:#f9b000;border:#FFFFFF;padding:30px;"> -->
                                             <table cellspacing="0"
                                               cellpadding="10" border="0"
                                               align="center">
@@ -1204,7 +1254,7 @@
                                                           font-size: 24px !important;
                                                           text-align: center !important;
                                                           line-height: 125%;
-                                                          color: #ffffff !important;
+                                                          color: #000000 !important;
                                                           font-family: 'museo-sans-bold',
                                                             Arial, Helvetica,
                                                             sans-serif !important;
@@ -1224,14 +1274,14 @@
                                                           sans-serif !important;
                                                         font-weight: 700;
                                                         line-height: 125%;
-                                                        color: #ffffff !important;
+                                                        color: #000000 !important;
                                                         text-align: center;
                                                       ">
                                                     <div style="
                                                           text-align: center;
                                                         ">
                                                       <span
-                                                        style="color: #ffffff">
+                                                        style="color: #000000">
                                                         <strong style="
                                                               font-family: 'museo-sans-bold',
                                                                 Arial, Helvetica,
@@ -1243,7 +1293,7 @@
                                                         Dienstag, 12. Juni
                                                         2018, 12:00
                                                         &ndash;&nbsp;14:00 Uhr
-                                                        <br />
+                                                        <br>
                                                         <strong style="
                                                               font-family: 'museo-sans-bold',
                                                                 Arial, Helvetica,
@@ -1318,7 +1368,7 @@
                                                                           line-height: 100%;
                                                                           text-align: center;
                                                                           text-decoration: none;
-                                                                          color: #e84e0f;
+                                                                          color: #f9b000;
                                                                           font-family: 'museo-sans-bold',
                                                                             Arial,
                                                                             Helvetica,
@@ -1397,7 +1447,7 @@
                                                                           line-height: 100%;
                                                                           text-align: center;
                                                                           text-decoration: underline;
-                                                                          color: #ffffff;
+                                                                          color: #000000;
                                                                           font-family: 'museo-sans',
                                                                             Arial,
                                                                             Helvetica,
@@ -1431,7 +1481,7 @@
                                                           sans-serif !important;
                                                         font-weight: 700;
                                                         font-style: normal !important;
-                                                        color: #ffffff;
+                                                        color: #000000;
                                                       ">
                                                     <div style="
                                                           text-align: center;
@@ -1518,12 +1568,12 @@
                                                         gr&uuml;&szlig;t Sie
                                                         herzlich,
                                                       </span>
-                                                      <br />
-                                                      <br />
+                                                      <br>
+                                                      <br>
                                                       Ihre
-                                                      <br />
+                                                      <br>
                                                       Agenda Austria
-                                                      <br />
+                                                      <br>
 
 
                                                     </p>
@@ -1538,7 +1588,8 @@
                                                           font-weight: 900;
                                                         " target="_blank">
                                                         www.agenda-austria.at
-                                                      </a></p>
+                                                      </a>
+                                                    </p>
                                                   </td>
                                                 </tr>
                                               </tbody>
@@ -1627,7 +1678,7 @@
                                                               class="footer-link-bold">
                                                               In Kontakt bleiben
                                                             </span>
-                                                            <br />
+                                                            <br>
                                                             <!-- Social Media Icons -->
                                                             <table>
                                                               <tbody>
@@ -1652,7 +1703,7 @@
                                                                           width: auto;
                                                                         "
                                                                         src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/69932fac-dacd-51fa-a805-bd8558bf71e0.png"
-                                                                        alt="facebook icon" />
+                                                                        alt="facebook icon">
                                                                     </a>
                                                                   </td>
                                                                   <td style="
@@ -1675,7 +1726,7 @@
                                                                           width: auto;
                                                                         "
                                                                         src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/81cf9deb-a23f-eb72-705f-14f4a23e8fa1.png"
-                                                                        alt="twitter icon" />
+                                                                        alt="twitter icon">
                                                                     </a>
                                                                   </td>
                                                                   <td style="
@@ -1698,7 +1749,7 @@
                                                                           width: auto;
                                                                         "
                                                                         src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/0732011e-e2c2-496a-b368-44e1ea36e923.png"
-                                                                        alt="SM_Y.png" />
+                                                                        alt="SM_Y.png">
                                                                     </a>
                                                                   </td>
                                                                   <td style="
@@ -1721,7 +1772,7 @@
                                                                           width: auto;
                                                                         "
                                                                         src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/59c41387-bf1b-89db-34fe-0159b0dc4d03.png"
-                                                                        alt="instagram icon" />
+                                                                        alt="instagram icon">
                                                                     </a>
                                                                   </td>
                                                                   <td style="
@@ -1744,7 +1795,7 @@
                                                                           width: auto;
                                                                         "
                                                                         src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/11699d29-9a8c-6fd6-13e5-ffcd475eeede.png"
-                                                                        alt="tiktok icon" />
+                                                                        alt="tiktok icon">
                                                                     </a>
                                                                   </td>
                                                                   <td>
@@ -1765,7 +1816,7 @@
                                                                           width: auto;
                                                                         "
                                                                         src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/68af523e-5785-f9ea-8e53-9fe4390becc8.png"
-                                                                        alt="linkedin icon " />
+                                                                        alt="linkedin icon ">
                                                                     </a>
                                                                   </td>
                                                                 </tr>
@@ -1793,7 +1844,7 @@
                                                               padding-top: 0;
                                                               padding-bottom: 9px;
                                                               word-break: break-word;
-                                                              color: #e84e0f;
+                                                              color: #f9b000;
                                                               font-family: 'museo-sans',
                                                                 Arial, Helvetica,
                                                                 sans-serif !important;
@@ -1805,7 +1856,7 @@
                                                                 font-family: 'museo-sans',
                                                                   Arial, Helvetica,
                                                                   sans-serif !important;
-                                                                color: #e84e0f;
+                                                                color: #f9b000;
                                                                 font-size: 16px;
                                                                 font-weight: 700;
                                                                 line-height: 125%;
@@ -1818,12 +1869,12 @@
                                                               View this email in
                                                               your browser
                                                             </a>
-                                                            <br />
+                                                            <br>
                                                             <a style="
                                                                 font-family: 'museo-sans',
                                                                   Arial, Helvetica,
                                                                   sans-serif !important;
-                                                                color: #e84e0f;
+                                                                color: #f9b000;
                                                                 font-size: 16px;
                                                                 font-weight: 700;
                                                                 line-height: 125%;
@@ -1835,12 +1886,12 @@
                                                               Einstellungen
                                                               anpassen
                                                             </a>
-                                                            <br />
+                                                            <br>
                                                             <a style="
                                                                 font-family: 'museo-sans',
                                                                   Arial, Helvetica,
                                                                   sans-serif !important;
-                                                                color: #e84e0f;
+                                                                color: #f9b000;
                                                                 font-size: 16px;
                                                                 font-weight: 700;
                                                                 line-height: 125%;
