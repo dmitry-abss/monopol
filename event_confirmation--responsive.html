@@ -147,54 +147,67 @@
       }
       /*
 	@tab Page
-	@section heading 1
 	@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-	@style heading 1
+	@style headline
 	*/
       h1 {
-        /*@tab Page
-@section heading 1
-@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-@style heading 1*/
+        /*@editable*/
         color: #27348b !important;
+        /*@editable*/
         font-family: 'museo-sans-bold', Arial Black, Helvetica, sans-serif !important;
-        font-style: normal !important;
-        font-weight: 900 !important;
-        line-height: 125%;
+        /*@editable*/
         font-size: 55px;
-      }
-      h2 {
-        /*@editable*/
-        font-family: 'museo-sans-bold', Arial Black, Helvetica, sans-serif !important;
-        /*@editable*/
-        font-size: 18px;
         /*@editable*/
         font-style: normal;
         /*@editable*/
-        font-weight: bold;
+        font-weight: 900 !important;
+        /*@editable*/
+        line-height: 100%;
+        /*@editable*/
+        letter-spacing: normal;
+        /*@editable*/
+        text-align: left;
+      }
+      /*
+	@tab Page
+	@tip Set the styling for all second-level headings in your emails.
+	@style eventname
+	*/
+      h2 {
+        /*@editable*/
+        color: #ffffff !important;
+        /*@editable*/
+        font-family: 'museo-sans-bold', Arial Black, Helvetica, sans-serif !important;
+        /*@editable*/
+        font-size: 24px;
+        /*@editable*/
+        font-style: normal;
+        /*@editable*/
+        font-weight: 900;
+        /*@editable*/
+        line-height: 100%;
+        /*@editable*/
+        letter-spacing: normal;
+        /*@editable*/
+        text-align: center;
+      }
+      h4 {
+        /*@editable*/
+        color: #000000 !important;
+        /*@editable*/
+        font-family: 'museo-sans-bold', Arial Black, Helvetica, sans-serif !important;
+        /*@editable*/
+        font-size: 20px !important;
+        /*@editable*/
+        font-style: normal;
+        /*@editable*/
+        font-weight: 900 !important;
         /*@editable*/
         line-height: 125%;
         /*@editable*/
         letter-spacing: normal;
         /*@editable*/
         text-align: left;
-        color: #27348b !important;
-      }
-      h3 {
-        color: #27348b !important;
-      }
-      h4 {
-        /*@editable*/
-        color: #000000;
-        /*@editable*/
-        font-family: Helvetica;
-        /*@editable*/
-        font-size: 18px;
-        /*@editable*/
-        line-height: 125%;
-        /*@editable*/
-        text-align: left;
-        margin-top: -10px;
       }
       /*
 	@tab Preheader
@@ -217,7 +230,7 @@
         /*@editable*/
         color: #000000;
         /*@editable*/
-        font-family: Helvetica;
+        font-family: 'museo-sans', Arial, Helvetica, sans-serif !important;
         /*@editable*/
         font-size: 10px;
         /*@editable*/
@@ -230,16 +243,13 @@
 	@section preheader link
 	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 	*/
-      .bodyContainer .mcnTextContent a {
+      .preheaderContainer .mcnTextContent a {
         /*@editable*/
-        color: #27348b;
+        color: #000000;
         /*@editable*/
-        font-weight: 700;
+        font-weight: bold;
         /*@editable*/
-        text-decoration: underline !important;
-        /*@editable*/
-        line-height: 125% !important;
-        font-family: 'museo-sans', Arial, Helvetica, sans-serif !important;
+        text-decoration: none;
       }
       /*
 	@tab Header
@@ -262,7 +272,7 @@
         /*@editable*/
         color: #000000;
         /*@editable*/
-        font-family: sabonnextltpro-regular, georgia, times, serif !important;
+        font-family: 'museo-sans', Arial, Helvetica, sans-serif !important;
         /*@editable*/
         font-size: 14px;
         /*@editable*/
@@ -277,7 +287,7 @@
 	*/
       .headerContainer .mcnTextContent a {
         /*@editable*/
-        color: #1c307e;
+        color: #000000;
         /*@editable*/
         font-weight: bold;
         /*@editable*/
@@ -289,37 +299,31 @@
 	@tip Set the background color and borders for your email's body area.
 	*/
       #templateBody {
-        /*@tab Body
-@section body style
-@tip Set the background color and borders for your email's body area.*/
-        font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important;
-        font-weight: normal !important;
-        font-style: italic !important;
-        color: #27348b !important;
-        -ms-hyphens: auto;
-        -webkit-hyphens: auto;
-        hyphens: auto;
-        lang: de;
+        /*@editable*/
+        border-top: 0;
+        /*@editable*/
+        border-bottom: 0;
       }
       /*
 	@tab Body
 	@section body text
-	@style text
 	@tip Set the styling for your email's body text. Choose a size and color that is easy to read.
+	@style text
 	*/
       .bodyContainer .mcnTextContent,
       .bodyContainer .mcnTextContent p {
-        /*@tab Body
-@section body text
-@style text
-@tip Set the styling for your email's body text. Choose a size and color that is easy to read.*/
-        font-size: 18px;
+        /*@editable*/
+        color: #000000;
+        /*@editable*/
         font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important;
+        /*@editable*/
+        font-size: 18px;
+        /*@editable*/
         font-style: normal !important;
-        font-weight: normal !important;
-        padding-top: 10px !important;
+        /*@editable*/
         line-height: 125%;
-        color: #000000 !important;
+        /*@editable*/
+        text-align: left;
       }
       /*
 	@tab Body
@@ -328,13 +332,11 @@
 	*/
       .bodyContainer .mcnTextContent a {
         /*@editable*/
-        color: #27348b;
+        color: #000000;
         /*@editable*/
-        font-weight: 700;
+        font-weight: bold;
         /*@editable*/
-        text-decoration: underline !important;
-        /*@editable*/
-        line-height: 125% !important;
+        text-decoration: none;
       }
       /*
 	@tab Footer
@@ -349,54 +351,6 @@
         /*@editable*/
         border-bottom: 0;
       }
-      @font-face {
-        font-family: 'SabonNextLTPro-Italic';
-        font-style: italic;
-        font-weight: normal;
-        src: local(SabonNextLTPro-Italic),
-          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Italic.woff)
-            format('woff'),
-          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Italic.otf)
-            format('opentype');
-      }
-      @font-face {
-        font-family: 'SabonNextLTPro-Regular';
-        font-style: normal;
-        font-weight: normal;
-        src: local(SabonNextLTPro-Regular),
-          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Regular.woff)
-            format('woff'),
-          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Regular.otf)
-            format('opentype');
-      }
-      @font-face {
-        font-family: 'SabonNextLTPro-Bold';
-        font-style: normal;
-        font-weight: bold;
-        src: local(SabonNextLTPro-Bold),
-          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Bold.woff)
-            format('woff'),
-          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Bold.otf)
-            format('opentype');
-      }
-      @font-face {
-        font-family: 'museo-sans-bold';
-        font-style: normal;
-        font-weight: 900;
-        src: url(https://agenda-austria.at/Newsletter/MuseoSans_900.woff)
-            format('woff'),
-          url(https://agenda-austria.at/Newsletter/MuseoSans_900.otf)
-            format('opentype');
-      }
-      @font-face {
-        font-family: 'museo-sans';
-        font-style: normal;
-        font-weight: 700;
-        src: url(https://agenda-austria.at/Newsletter/MuseoSans_700.woff)
-            format('woff'),
-          url(https://agenda-austria.at/Newsletter/MuseoSans_700.otf)
-            format('opentype');
-      }
       /*
 	@tab Footer
 	@section footer text
@@ -405,7 +359,9 @@
       .footerContainer .mcnTextContent,
       .footerContainer .mcnTextContent p {
         /*@editable*/
-        font-family: Helvetica;
+        color: #000000;
+        /*@editable*/
+        font-family: 'museo-sans', Arial, Helvetica, sans-serif !important;
         /*@editable*/
         font-size: 10px;
         /*@editable*/
@@ -420,7 +376,9 @@
 	*/
       .footerContainer .mcnTextContent a {
         /*@editable*/
-        font-weight: 700;
+        color: #27348b;
+        /*@editable*/
+        font-weight: bold;
         /*@editable*/
         text-decoration: none;
       }
@@ -525,6 +483,54 @@
           padding-left: 18px !important;
         }
       }
+      @font-face {
+        font-family: 'SabonNextLTPro-Italic';
+        font-style: italic;
+        font-weight: normal;
+        src: local(SabonNextLTPro-Italic),
+          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Italic.woff)
+            format('woff'),
+          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Italic.otf)
+            format('opentype');
+      }
+      @font-face {
+        font-family: 'SabonNextLTPro-Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local(SabonNextLTPro-Regular),
+          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Regular.woff)
+            format('woff'),
+          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Regular.otf)
+            format('opentype');
+      }
+      @font-face {
+        font-family: 'SabonNextLTPro-Bold';
+        font-style: normal;
+        font-weight: bold;
+        src: local(SabonNextLTPro-Bold),
+          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Bold.woff)
+            format('woff'),
+          url(https://agenda-austria.at/Newsletter/SabonNextLTPro-Bold.otf)
+            format('opentype');
+      }
+      @font-face {
+        font-family: 'museo-sans-bold';
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://agenda-austria.at/Newsletter/MuseoSans_900.woff)
+            format('woff'),
+          url(https://agenda-austria.at/Newsletter/MuseoSans_900.otf)
+            format('opentype');
+      }
+      @font-face {
+        font-family: 'museo-sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://agenda-austria.at/Newsletter/MuseoSans_700.woff)
+            format('woff'),
+          url(https://agenda-austria.at/Newsletter/MuseoSans_700.otf)
+            format('opentype');
+      }
       @media only screen and (max-width: 480px) {
         .mcnImageCardLeftImageContent,
         .mcnImageCardRightImageContent {
@@ -600,7 +606,7 @@
         .mcnBoxedTextContentContainer .mcnTextContent,
         .mcnBoxedTextContentContainer .mcnTextContent p {
           /*@editable*/
-          font-size: 16px !important;
+          font-size: 18px !important;
           /*@editable*/
           line-height: 125% !important;
         }
@@ -682,43 +688,11 @@
         margin-top: 0;
       }
       .link {
-        margin-top: -12px;
+        margin-top: -48px;
       }
       @media only screen and (max-width: 480px) {
         .link {
           margin-top: 10px !important;
-        }
-      }
-      .emailImage {
-        height: auto !important;
-        max-width: 600px !important;
-        width: 100% !important;
-      }
-      .link {
-        margin-top: -12px;
-      }
-      @media only screen and (max-width: 480px) {
-        .link {
-          margin-top: 10px !important;
-        }
-      }
-      .default-text {
-        -ms-hyphens: auto;
-        -webkit-hyphens: auto;
-        hyphens: auto;
-      }
-      .heading3 {
-        font-size: 24px;
-        font-family: 'SabonNextLTPro-Regular', Georgia, Times, serif !important;
-      }
-      @media only screen and (max-width: 480px) {
-        table.heading3 {
-          font-size: 22px !important;
-        }
-      }
-      @media only screen and (max-width: 480px) {
-        table.heading3 {
-          font-size: 22px !important;
         }
       }
     </style>
@@ -773,117 +747,12 @@
               <tr>
                 <td align="center" valign="top">
                   <!-- BEGIN PREHEADER // -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="600">
-                    <tr>
-                      <td align="center" valign="top">
-                        <table
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          width="600"
-                          style="
-                            max-width: 600px;
-                            padding-top: 9px;
-                            padding-bottom: 9px;
-                          "
-                          class="templateContainer"
-                        >
-                          <table
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                            width="100%"
-                            style="width: 100%"
-                          >
-                            <tr>
-                              <td valign="top" width="600" style="width: 600px">
-                                <table
-                                  align="right"
-                                  border="0"
-                                  cellpadding="0"
-                                  cellspacing="0"
-                                  style="max-width: 100%; min-width: 100%"
-                                  width="100%"
-                                  class="mcnTextContentContainer"
-                                >
-                                  <tbody>
-                                    <tr>
-                                      <td
-                                        valign="top"
-                                        class="mcnTextContent"
-                                        style="
-                                          padding: 0px 0px 9px;
-                                          font-size: 18px;
-                                          line-height: 125%;
-                                        "
-                                      >
-                                        <div class="div">
-                                          <img
-                                            src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/83621cd9-cc4d-a7b8-f235-cf5b760f91b2.png"
-                                            alt="1407bb1f-1f8d-a6d6-3f91-7a364e34b117.png"
-                                            border="0"
-                                            style="
-                                              height: 68px;
-                                              width: 600px;
-                                              margin: 0;
-                                              padding: 0;
-                                            "
-                                            width="600"
-                                            height="68"
-                                            mc:edit="headerbild"
-                                          />
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        valign="top"
-                                        align="right"
-                                        class="mcnTextContent"
-                                        style="
-                                          padding: 9px 0px 9px;
-                                          font-size: 18px;
-                                          line-height: 125%;
-                                        "
-                                      >
-                                        <img
-                                          src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/4346cdc9-cac2-4ff8-741e-8b0904424f07.png"
-                                          alt=""
-                                          border="0"
-                                          style="
-                                            height: 100px;
-                                            width: 100px;
-                                            margin: 0;
-                                            padding: 0;
-                                          "
-                                          width="100"
-                                          height="100"
-                                          mc:edit="headerbild2"
-                                        />
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- // END PREHEADER -->
-                </td>
-              </tr>
-              <tr>
-                <td align="center" valign="top">
-                  <!-- BEGIN HEADER // -->
                   <table
                     border="0"
                     cellpadding="0"
                     cellspacing="0"
                     width="100%"
-                    id="templateHeader"
+                    id="templatePreheader"
                   >
                     <tr>
                       <td align="center" valign="top">
@@ -891,122 +760,14 @@
                           border="0"
                           cellpadding="0"
                           cellspacing="0"
-                          width="600"
+                          width="100%"
                           class="templateContainer"
+                          style="max-width: 600px"
                         >
                           <tr>
                             <td
                               valign="top"
-                              class="headerContainer"
-                              style="padding-top: 9px"
-                            >
-                              <table
-                                border="0"
-                                cellpadding="0"
-                                cellspacing="0"
-                                width="100%"
-                                class="mcnTextBlock"
-                                style="min-width: 100%"
-                              >
-                                <tbody class="mcnTextBlockOuter">
-                                  <tr>
-                                    <td
-                                      valign="top"
-                                      class="mcnTextBlockInner"
-                                      style="padding-top: 9px"
-                                    >
-                                      <!--[if mso]>
-                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-                                        <tr>
-                                          <![endif]-->
-
-                                      <!--[if mso]>
-                                      <td valign="top" width="600" style="width:600px;">
-                                        <![endif]-->
-                                      <table
-                                        align="left"
-                                        border="0"
-                                        cellpadding="0"
-                                        cellspacing="0"
-                                        style="max-width: 100%; min-width: 100%"
-                                        width="100%"
-                                        class="mcnTextContentContainer"
-                                      >
-                                        <tbody>
-                                          <tr>
-                                            <td
-                                              valign="top"
-                                              class="mcnTextContent"
-                                              style="
-                                                padding: 5px 0px 9px;
-                                                font-size: 18px;
-                                                line-height: 125%;
-                                              "
-                                            >
-                                              <h2 class="link" mc:edit="date">
-                                                <span class="mc-toc-title">
-                                                  <strong>
-                                                    <span
-                                                      style="
-                                                        color: #27348b !important;
-                                                      "
-                                                    >
-                                                      09.09.2019
-                                                    </span>
-                                                  </strong>
-                                                </span>
-                                              </h2>
-                                              <h1 mc:edit="headline">
-                                                Oxfam weiß, wie man Schlagzeilen
-                                                macht.
-                                              </h1>
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                      <!--[if mso]>
-                                    </td>
-                                    <![endif]-->
-                                      <!--[if mso]>
-                                    </tr>
-                                  </table>
-                                  <![endif]-->
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                  <!-- // END HEADER -->
-                </td>
-              </tr>
-              <tr>
-                <td align="center" valign="top">
-                  <!-- BEGIN BODY // -->
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                    id="templateBody"
-                  >
-                    <tr>
-                      <td align="center" valign="top">
-                        <table
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          width="600"
-                          class="templateContainer"
-                        >
-                          <tr>
-                            <td
-                              valign="top"
-                              class="bodyContainer"
+                              class="preheaderContainer"
                               style="padding-top: 9px; padding-bottom: 9px"
                             >
                               <table
@@ -1052,248 +813,618 @@
                                                 line-height: 125%;
                                               "
                                             >
-                                              <h4 mc:edit="anrede">
-                                                *|ANREDEPERS|*!
-                                              </h4>
-                                              <p mc:edit="textfeld1">
-                                                Wie viel Urlaubs- und Feiertage
-                                                haben die Arbeitnehmer in
-                                                Österreich eigentlich insgesamt
-                                                zur Verfügung? Wo liegen wir
-                                                damit im internationalen
-                                                Vergleich? Wie viel Urlaubs- und
-                                                Feiertage haben die Arbeitnehmer
-                                                in Österreich eigentlich
-                                                insgesamt zur Verfügung? Wo
-                                                liegen wir damit im
-                                                internationalen Vergleich? Wie
-                                                viel Urlaubs- und Feiertage
-                                                haben die Arbeitnehmer in
-                                                Österreich eigentlich insgesamt
-                                                zur Verfügung? Wo liegen wir
-                                                damit im internationalen
-                                                Vergleich? 
-                                              </p>
-                                              <table
-                                                border="0"
-                                                cellpadding="0"
-                                                cellspacing="0"
-                                              >
-                                                <tbody>
-                                                  <tr>
-                                                    <td
-                                                      style="
-                                                        padding-top: 15px !important;
-                                                        padding-right: 20px !important;
-                                                        padding-left: 20px !important;
-                                                        padding-bottom: 10px !important;
-                                                      "
-                                                    >
-                                                      <h3
-                                                        class="heading3"
-                                                        style="
-                                                          font-family: 'museo-sans-bold',
-                                                            Arial Black,
-                                                            Helvetica,
-                                                            sans-serif !important;
-                                                          font-weight: 900 !important;
-                                                          color: #27348b !important;
-                                                          text-align: center;
-                                                          -ms-hyphens: auto;
-                                                          -webkit-hyphens: auto;
-                                                          line-height: 125% !important;
-                                                        "
-                                                        mc:edit="zitat1"
-                                                      >
-                                                        Donaudampfschiffahrt ist
-                                                        eine tolle Sache. Diese
-                                                        Silbentrennung
-                                                        funktioniert scheinbar
-                                                        ganz.  
-                                                      </h3>
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                              <p
-                                                class="default-text"
-                                                mc:edit="text1"
-                                              >
-                                                Wie viel Urlaubs- und Feiertage
-                                                haben die Arbeitnehmer in
-                                                Österreich eigentlich insgesamt
-                                                zur Verfügung? Wo liegen wir
-                                                damit im internationalen
-                                                Vergleich? Wie viel Urlaubs- und
-                                                Feiertage haben die Arbeitnehmer
-                                                in Österreich eigentlich
-                                                insgesamt zur Verfügung? Wo
-                                                liegen wir damit im
-                                                internationalen Vergleich?  Wie
-                                                viel Urlaubs- und Feiertage
-                                                haben die Arbeitnehmer in
-                                                Österreich eigentlich insgesamt
-                                                zur Verfügung? Wo liegen wir
-                                                damit im internationalen
-                                                Vergleich? 
-                                              </p>
-                                              <table
-                                                border="0"
-                                                cellpadding="0"
-                                                cellspacing="0"
-                                              >
-                                                <tbody>
-                                                  <tr>
-                                                    <td
-                                                      style="
-                                                        padding-top: 15px !important;
-                                                        padding-right: 20px !important;
-                                                        padding-left: 20px !important;
-                                                        padding-bottom: 10px !important;
-                                                      "
-                                                    >
-                                                      <h3
-                                                        class="heading3"
-                                                        mc:edit="zitat2"
-                                                        mc:hideable
-                                                        style="
-                                                          font-family: 'museo-sans-bold',
-                                                            Arial Black,
-                                                            Helvetica,
-                                                            sans-serif !important;
-                                                          font-weight: 900 !important;
-                                                          color: #27348b !important;
-                                                          text-align: center;
-                                                          -ms-hyphens: auto;
-                                                          -webkit-hyphens: auto;
-                                                          line-height: 125% !important;
-                                                        "
-                                                      >
-                                                        Es wird suggeriert, dass
-                                                        die Armen deshalb arm
-                                                        sind, weil die Reichen
-                                                        so reich sind.
-                                                      </h3>
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                              <p
-                                                mc:edit="textgruppe2"
-                                                class="default-text"
-                                              >
-                                                Bereits die ehemalige
-                                                Parteichefin Pamela Rendi-Wagner
-                                                hat das idente Mo- dell im
-                                                August 2019 pr&auml;sentiert.
-                                                Gegen&uuml;ber der Zeit im Bild
-                                                1 meinte ich am ver. gangenen
-                                                Dienstag: &bdquo;&Ouml;sterreich
-                                                ist ein H&ouml;chststeuerland,
-                                                das keine neuen Steuern braucht.
-                                                Was &Ouml;sterreich dringend
-                                                braucht, ist eine kr&auml;ftige
-                                                Steuer, sondern das schafft man
-                                                damit, dass der Staat seinen
-                                                Ausgaben- rausch endlich in den
-                                                Griff kriegt.&ldquo; &nbsp;
-                                                <br />
-                                                <br />
-                                                Wer eine
-                                                gleichm&auml;&szlig;igere
-                                                Verm&ouml;gensverteilung will,
-                                                muss den Eigentums- erwerb
-                                                f&ouml;rdern. Allein wenn die
-                                                Staatsausgaben gemessen an der
-                                                Wirt- schaftsleistung auf das
-                                                Vorkrisenniveau
-                                                zur&uuml;ckkehrten, ersparten
-                                                sich die Steuerzahler 18
-                                                Milliarden Euro j&auml;hrlich.
-                                                Also ein Vielfaches dessen, was
-                                                Substanzsteuern je in der Lage
-                                                w&auml;ren einzus- pielen.&nbsp;
-                                                <br />
-                                                <br />
-                                                Unsere Kritik am
-                                                &bdquo;Babler-Plan&ldquo; wurde
-                                                von zahlreichen Medien (
+                                              <div class="div">
+                                                <img
+                                                  class="emailImage"
+                                                  style="
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    height: auto !important;
+                                                    max-width: 600px !important;
+                                                    width: 100% !important;
+                                                  "
+                                                  mc:edit="headerimage"
+                                                  src="https://mcusercontent.com/841d829fd2147fc9a9bad49db/images/83621cd9-cc4d-a7b8-f235-cf5b760f91b2.png"
+                                                  alt="Agenda Austria Logo"
+                                                />
                                                 <a
-                                                  href="https://www.orf.at/"
+                                                  class="link"
+                                                  href="#link"
+                                                  style="
+                                                    color: #ffffff;
+                                                    display: block;
+                                                    float: left;
+                                                    font-size: 12px;
+                                                    font-weight: normal;
+                                                    position: relative;
+                                                    text-align: center;
+                                                    text-decoration: underline;
+                                                  "
                                                   target="_blank"
                                                 >
-                                                  ORF.at
+                                                  <u>&nbsp;</u>
                                                 </a>
-                                                ,
-                                                <a
-                                                  href="https://www.puls24.at/"
-                                                  target="_blank"
-                                                >
-                                                  Puls24
-                                                </a>
-                                                , &bdquo;
-                                                <a
-                                                  href="https://www.diepresse.com/"
-                                                  target="_blank"
-                                                >
-                                                  Die Presse
-                                                </a>
-                                                &ldquo;, &bdquo;
-                                                <a
-                                                  href="https://www.nachrichten.at/"
-                                                  target="_blank"
-                                                >
-                                                  Ober&ouml;sterreichische
-                                                  Nachrichten
-                                                </a>
-                                                &ldquo;, &bdquo;
-                                                <a
-                                                  href="https://www.tt.com/"
-                                                  target="_blank"
-                                                >
-                                                  Tiroler Tageszeitung
-                                                </a>
-                                                &ldquo;, &bdquo;
-                                                <a
-                                                  href="https://kurier.at/"
-                                                  target="_blank"
-                                                >
-                                                  Kurier
-                                                </a>
-                                                &ldquo;) &uuml;bernommen.
-                                                <br />
-                                                <br />
-                                                Mit den besten
-                                                Gr&uuml;&szlig;en!
-                                                <br />
-                                                <br />
-                                                Ihr
-                                              </p>
-                                              <img
-                                                src="https://gallery.mailchimp.com/841d829fd2147fc9a9bad49db/images/71e12a46-8907-438e-bd24-9bd6840f9faf.jpg"
-                                                alt="71e12a46-8907-438e-bd24-9bd6840f9faf.jpg"
-                                                border="0"
-                                                style="
-                                                  height: 72px;
-                                                  width: 200px;
-                                                  margin: 0;
-                                                  padding: 0;
-                                                "
-                                                width="200"
-                                                height="72"
-                                                mc:edit="signature"
-                                              />
+                                              </div>
                                             </td>
                                           </tr>
                                         </tbody>
                                       </table>
                                       <!--[if mso]>
-                                      </td>
+                                    </td>
+                                    <![endif]-->
+                                      <!--[if mso]>
+                                    </tr>
+                                  </table>
+                                  <![endif]-->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- // END PREHEADER -->
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top">
+                  <!-- BEGIN HEADER // -->
+                  <table
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    id="templateHeader"
+                  >
+                    <tr>
+                      <td align="center" valign="top">
+                        <table
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                          class="templateContainer"
+                        >
+                          <tr>
+                            <td
+                              valign="top"
+                              class="headerContainer"
+                            >
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                class="mcnDividerBlock"
+                                style="min-width: 100%"
+                              >
+                                <tbody class="mcnDividerBlockOuter">
+                                  <tr>
+                                    <td
+                                      class="mcnDividerBlockInner"
+                                      style="min-width: 100%;"
+                                    >
+                                      <table
+                                        class="mcnDividerContent"
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        style="min-width: 100%"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <span></span>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- // END HEADER -->
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top">
+                  <!-- BEGIN BODY // -->
+                  <table
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                    id="templateBody"
+                  >
+                    <tr>
+                      <td align="center" valign="top">
+                        <table
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                          class="templateContainer"
+                          style="max-width: 600px"
+                        >
+                          <tr>
+                            <td
+                              valign="top"
+                              class="bodyContainer"
+                              style="padding-top: 9px; padding-bottom: 9px"
+                            >
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                class="mcnTextBlock"
+                                style="min-width: 100%"
+                              >
+                                <tbody class="mcnTextBlockOuter">
+                                  <tr>
+                                    <td
+                                      valign="top"
+                                      class="mcnTextBlockInner"
+                                      style="padding-top: 9px"
+                                    >
+                                      <table
+                                        align="left"
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        style="max-width: 100%; min-width: 100%"
+                                        width="100%"
+                                        class="mcnTextContentContainer"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              valign="top"
+                                              class="mcnTextContent"
+                                              style="
+                                                padding: 0px 0px 28px;
+                                                font-size: 18px;
+                                                line-height: 125%;
+                                              "
+                                            >
+                                              <h1 mc:edit="ueberschrift">
+                                                Anmeldebest&auml;&shy;tigung
+                                              </h1>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                class="mcnTextBlock"
+                                style="min-width: 100%"
+                              >
+                                <tbody class="mcnTextBlockOuter">
+                                  <tr>
+                                    <td
+                                      valign="top"
+                                      class="mcnTextBlockInner"
+                                      style="padding-top: 9px"
+                                    >
+                                      <!--[if mso]>
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                                        <tr>
+                                          <![endif]-->
+
+                                      <!--[if mso]>
+                                      <td valign="top" width="600" style="width:600px;">
+                                        <![endif]-->
+                                      <table
+                                        align="left"
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        style="max-width: 100%; min-width: 100%"
+                                        width="100%"
+                                        class="mcnTextContentContainer"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              valign="top"
+                                              class="mcnTextContent"
+                                              style="
+                                                padding: 0px 0px 9px;
+                                                font-size: 18px;
+                                                line-height: 125%;
+                                              "
+                                            >
+                                              <h4 mc:edit="anrede">
+                                                *|SF_SALUTATION|*,
+                                              </h4>
+                                              <p mc:edit="text">
+                                                <span>
+                                                  vielen Dank für Ihre
+                                                  Anmeldung.
+                                                </span>
+                                              </p>
+                                              <p mc:edit="text2">
+                                                Wir freuen uns, Sie bald bei der
+                                                Veranstaltung „*|EVENT_NAME|*“
+                                                begrüßen zu dürfen.
+                                              </p>
+                                              <p mc:edit="text3">
+                                                Bei Rückfragen wenden Sie sich
+                                                bitte an
+                                                <a
+                                                  style="
+                                                    text-decoration: underline;
+                                                  "
+                                                  href="mailto:veranstaltung@agenda-austria.at"
+                                                >
+                                                  veranstaltung@agenda-austria.at
+                                                </a>
+                                                .
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!--[if mso]>
+                                        </td>
+                                      <![endif]-->
+                                      <!--[if mso]>
+                                          </tr>
+                                        </table>
+                                      <![endif]-->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                class="mcnTextBlock"
+                                style="min-width: 100%"
+                              >
+                                <tbody class="mcnTextBlockOuter">
+                                  <tr>
+                                    <td
+                                      valign="top"
+                                      class="mcnTextBlockInner"
+                                      style="padding-top: 9px"
+                                    >
+                                      <!--[if mso]>
+                                    <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                                      <tr>
+                                        <![endif]-->
+
+                                      <!--[if mso]>
+                                        <td valign="top" width="600" style="width:600px;">
+                                      <![endif]-->
+                                      <table
+                                        align="left"
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        style="max-width: 100%; min-width: 100%"
+                                        width="100%"
+                                        class="mcnTextContentContainer"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              valign="top"
+                                              class="mcnTextContent"
+                                              style="
+                                                padding: 30px;
+                                                background-color: #27348b;
+                                              "
+                                            >
+                                              <table
+                                                cellspacing="0"
+                                                cellpadding="10"
+                                                border="0"
+                                                align="center"
+                                              >
+                                                <tbody align="center">
+                                                  <tr>
+                                                    <td
+                                                      style="
+                                                        padding-left: 50px;
+                                                        padding-right: 50px;
+                                                      "
+                                                      valign="middle"
+                                                    >
+                                                      <h2
+                                                        mc:edit="event"
+                                                        style="
+                                                          font-size: 24px;
+                                                          text-align: center !important;
+                                                          color: #ffffff !important;
+                                                          font-weight: 900 !important;
+                                                          line-height: 125%;
+                                                        "
+                                                      >
+                                                        *|EVENT_NAME|*
+                                                      </h2>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td
+                                                      style="
+                                                        font-size: 18px;
+                                                        text-align: center !important;
+                                                        font-family: 'museo-sans',
+                                                          Arial, Helvetica,
+                                                          sans-serif !important;
+                                                        font-weight: 700;
+                                                        color: #ffffff !important;
+                                                        line-height: 125%;
+                                                      "
+                                                      mc:edit="details"
+                                                    >
+                                                      <strong
+                                                        style="
+                                                          font-family: 'museo-sans-bold',
+                                                            Arial Black, Helvetica,
+                                                            serif;
+                                                          font-weight: 900;
+                                                        "
+                                                      >
+                                                        Wann:
+                                                      </strong>
+                                                      <span>
+                                                        *|EVENT_START_DATE|*,
+                                                        *|EVENT_START_TIME|*-*|EVENT_END_TIME|*
+                                                        Uhr
+                                                      </span>
+                                                      <br />
+
+                                                      <strong
+                                                        style="
+                                                          font-family: 'museo-sans-bold',
+                                                            Arial Black, Helvetica,
+                                                            serif;
+                                                          font-weight: 900;
+                                                        "
+                                                      >
+                                                        Wo:
+                                                      </strong>
+                                                      <span>
+                                                        *|EVENT_VENUE_NAME|*,
+                                                        *|EVENT_VENUE_CITY|*
+                                                      </span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td
+                                                      align="center"
+                                                      class="mcnButtonBlockInner"
+                                                      valign="top"
+                                                    >
+                                                      <table
+                                                        border="0"
+                                                        cellpadding="0"
+                                                        cellspacing="0"
+                                                        class="mcnButtonContentContainer"
+                                                        style="
+                                                          border-collapse: separate !important;
+                                                          border-radius: 0px;
+                                                        "
+                                                      >
+                                                        <tbody>
+                                                          <tr>
+                                                            <td
+                                                              align="center"
+                                                              class="mcnButtonContent"
+                                                              style="
+                                                                font-family: 'museo-sans-bold',
+                                                                  Arial Black,
+                                                                  Helvetica,
+                                                                  serif;
+
+                                                                padding: 16px;
+                                                                background-color: #ffffff;
+                                                                color: #27348b;
+                                                                width: 50%;
+                                                              "
+                                                              valign="middle"
+                                                            >
+                                                              <a
+                                                                mc:edit="button"
+                                                                class="mcnButton"
+                                                                href="*|EVENT_ICAL_URL|*"
+                                                                style="
+                                                                  font-weight: 900;
+                                                                  font-size: 18px;
+                                                                  letter-spacing: normal;
+                                                                  line-height: 100%;
+                                                                  text-align: center;
+                                                                  color: #27348b;
+                                                                "
+                                                                target="_blank"
+                                                                title="IM KALENDER SPEICHERN"
+                                                              >
+                                                                <strong>
+                                                                  Im Kalender
+                                                                  speichern
+                                                                </strong>
+                                                              </a>
+                                                            </td>
+                                                            <td
+                                                              width="20"
+                                                              style="
+                                                                padding: 10px;
+                                                              "
+                                                            ></td>
+                                                            <td
+                                                              align="center"
+                                                              class="mcnButtonContent"
+                                                              style="
+                                                                font-family: 'museo-sans-bold',
+                                                                  Arial Black,
+                                                                  Helvetica,
+                                                                  serif;
+
+                                                                padding: 16px;
+                                                                background-color: #ffffff;
+                                                                width: 50%;
+                                                                color: #27348b;
+                                                              "
+                                                              valign="middle"
+                                                            >
+                                                              <a
+                                                                class="mcnButton"
+                                                                href="*|EVENT_PRINT_URL|*"
+                                                                style="
+                                                                  font-weight: 900;
+                                                                  font-size: 18px;
+                                                                  letter-spacing: normal;
+                                                                  line-height: 100%;
+                                                                  text-align: center;
+                                                                  color: #27348b;
+                                                                "
+                                                                target="_blank"
+                                                                title="DETAILS DRUCKEN"
+                                                                mc:edit="button2"
+                                                              >
+                                                                <strong>
+                                                                  Details
+                                                                  drucken
+                                                                </strong>
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!--[if mso]>
+                                        </td>
                                       <![endif]-->
                                       <!--[if mso]>
                                       </tr>
                                     </table>
                                     <![endif]-->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                class="mcnTextBlock"
+                                style="min-width: 100%"
+                              >
+                                <tbody class="mcnTextBlockOuter">
+                                  <tr>
+                                    <td
+                                      valign="top"
+                                      class="mcnTextBlockInner"
+                                      style="
+                                        padding-top: 9px;
+                                        padding-bottom: 30px;
+                                      "
+                                    >
+                                      <table
+                                        align="left"
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        style="max-width: 100%; min-width: 100%"
+                                        width="100%"
+                                        class="mcnTextContentContainer"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              valign="top"
+                                              class="mcnTextContent"
+                                              style="
+                                                padding: 0px 0px 9px;
+                                                font-size: 18px;
+                                                line-height: 125%;
+                                              "
+                                            >
+                                              <p mc:edit="text4">
+                                                Falls Ihre Pläne sich ändern
+                                                sollten, benutzen Sie bitte den
+                                                folgenden Button, um sich von
+                                                dieser Veranstaltung rechtzeitig
+                                                abzumelden.
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+
+                                      <table
+                                        align="center"
+                                        class="mcnTextContent"
+                                        style="
+                                          padding: 0px 20px 0px 20px !important;
+                                        "
+                                      >
+                                        <tbody align="center">
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="mcnButtonContent"
+                                              style="
+                                                padding: 15px 60px;
+                                                border: 2px solid #27348b;
+                                                color: #27348b;
+                                              "
+                                              valign="middle"
+                                            >
+                                              <a
+                                                class="mcnButton"
+                                                href="*|EVENT_UNREGISTER_URL|*"
+                                                style="
+                                                  font-weight: 900;
+                                                  font-size: 20px;
+                                                  line-height: 100%;
+                                                  text-align: center;
+                                                  color: #27348b;
+                                                  font-family: 'museo-sans-bold',
+                                                    Arial Black, Helvetica, sans-serif;
+                                                  text-decoration: none;
+                                                "
+                                                target="_blank"
+                                                mc:edit="nichtteilnehmen"
+                                                title="NICHT TEILNEHMEN"
+                                              >
+                                                <strong>
+                                                  Nicht teilnehmen
+                                                </strong>
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
                                     </td>
                                   </tr>
                                 </tbody>
@@ -1339,7 +1470,7 @@
                                     border="0"
                                     cellpadding="0"
                                     cellspacing="0"
-                                    width="600"
+                                    width="100%"
                                   >
                                     <tbody>
                                       <tr>
@@ -1387,8 +1518,7 @@
                                                               display: block;
                                                               margin: 0;
                                                               font-family: 'museo-sans-bold',
-                                                                Arial Black,
-                                                                Helvetica,
+                                                                Arial Black, Helvetica,
                                                                 sans-serif;
                                                               font-size: 20px;
                                                               font-weight: 900;
@@ -1679,6 +1809,55 @@
                                       </tr>
                                     </tbody>
                                   </table>
+
+                                  <table
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    class="mcnTextContentContainer"
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <td
+                                          class="mcnTextContent"
+                                          style="
+                                            padding: 28px 0px 9px;
+                                            font-size: 18px;
+                                            line-height: 125%;
+                                          "
+                                        >
+                                          <span
+                                            style="
+                                              font-size: 16px;
+                                              font-family: sabonnextltpro-regular,
+                                                georgia, times, serif !important;
+                                              color: #000000;
+                                            "
+                                            mc:edit="datenschutz"
+                                          >
+                                            Der Veranstalter informiert, dass er
+                                            bei der Veranstaltung Lichtbilder
+                                            und Videoaufzeichnungen zu (auch die
+                                            Veranstaltung und den Veranstalter
+                                            bewerbenden) Dokumentationszwecken
+                                            erstellen lässt. Daran hat der
+                                            Veranstalter ein überwiegendes
+                                            berechtigtes Interesse im Sinne des
+                                            § 12 Abs 3 Z 3 DSG. Weitere
+                                            Informationen finden Sie in unseren
+                                            <a
+                                              style="color: #000000"
+                                              href="https://www.agenda-austria.at/datenschutz/"
+                                              target="_blank"
+                                            >
+                                              Datenschutzbestimmungen
+                                            </a>
+                                            .
+                                          </span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </td>
                               </tr>
                             </tbody>
@@ -1687,6 +1866,7 @@
                       </tr>
                     </tbody>
                   </table>
+
                   <!-- // END FOOTER -->
                 </td>
               </tr>
